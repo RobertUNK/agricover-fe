@@ -71,15 +71,35 @@ for (let i = 0; i < 5; i++) {
 
 app.get("/sales", (req, res) => {
   currentSalesId++;
-  const newSale = generateSales(currentSalesId);
-  salesData.unshift(newSale);
+
+  if (salesData.length >= 50) {
+    salesData = [];
+    for (let i = 0; i < 5; i++) {
+      currentSalesId++;
+      salesData.unshift(generateSales(currentSalesId));
+    }
+  } else {
+    const newSale = generateSales(currentSalesId);
+    salesData.unshift(newSale);
+  }
+
   res.json(salesData);
 });
 
 app.get("/purchases", (req, res) => {
   currentPurchasesId++;
-  const newPurchase = generatePurchases(currentPurchasesId);
-  purchasesData.unshift(newPurchase);
+
+  if (purchasesData.length >= 50) {
+    purchasesData = [];
+    for (let i = 0; i < 5; i++) {
+      currentPurchasesId++;
+      purchasesData.unshift(generatePurchases(currentPurchasesId));
+    }
+  } else {
+    const newPurchase = generatePurchases(currentPurchasesId);
+    purchasesData.unshift(newPurchase);
+  }
+
   res.json(purchasesData);
 });
 

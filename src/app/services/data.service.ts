@@ -6,8 +6,8 @@ import { TableData } from '../interfaces/table-data.interface';
 @Injectable({ providedIn: 'root' })
 export class DataService {
   private http = inject(HttpClient);
-  private salesEndpoint = 'http://localhost:3000/sales';
-  private purchasesEndpoint = 'http://localhost:3000/purchases';
+  private salesEndpoint = 'https://agricover-dashboard-be-production.up.railway.app/sales';
+  private purchasesEndpoint = 'https://agricover-dashboard-be-production.up.railway.app/purchases';
 
   pollSales(): Observable<TableData[]> {
     return timer(0, 10000).pipe(
