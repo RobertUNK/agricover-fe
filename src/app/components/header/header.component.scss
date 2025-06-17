@@ -17,20 +17,65 @@
     width: 125px;
     height: 78px;
   }
-  &__dropdown {
-    padding: 38px 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: 400;
-    font-size: 32px;
-    border: 1px solid #000000;
-    border-radius: 24px;
-    cursor: pointer;
-    img {
-      width: 40px;
-      height: 40px;
-      margin-left: 16px;
+  &__dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+    min-width: 164px;
+    .dropdown {
+      padding: 38px 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-weight: 400;
+      font-size: 32px;
+      border: 1px solid #000000;
+      border-radius: 24px;
+      justify-content: space-between;
+      cursor: pointer;
+      img {
+        width: 40px;
+        height: 40px;
+        margin-left: 16px;
+      }
+    }
+    .dropdown-list {
+      position: absolute;
+      top: calc(100% + 10px);
+      right: 0;
+      background: white;
+      border: 1px solid #000000;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      z-index: 999;
+      width: 100%;
+
+      li {
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        white-space: nowrap;
+        &:first-child {
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+        }
+
+         &:last-child {
+          border-bottom-left-radius: 12px;
+          border-bottom-right-radius: 12px;
+        }
+
+        &:hover {
+          background-color: #f2f2f2;
+        }
+
+        &.selected {
+          font-weight: bold;
+          background-color: #eaeaea;
+        }
+      }
     }
   }
 }
@@ -46,14 +91,23 @@
       width: 62.5px;
       height: 39px;
     }
-    &__dropdown {
-      padding: 19px 20px;
-      font-size: 16px;
-      border-radius: 12px;
-      img {
-        width: 20px;
-        height: 20px;
-        margin-left: 8px;
+    &__dropdown-wrapper {
+      .dropdown {
+        padding: 19px 20px;
+        font-size: 16px;
+        border-radius: 12px;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-left: 8px;
+        }
+      }
+      .dropdown-list {
+        border-radius: 12px;
+
+        li {
+          font-size: 16px;
+        }
       }
     }
   }

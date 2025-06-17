@@ -28,9 +28,6 @@ export class TableComponent {
     return '';
   }
 
-  addButtonClicked(data: TableData) {
-    console.log(data);
-  }
   openRowDetails(data: TableData) {
     this.onRowClicked.emit(data);
   }

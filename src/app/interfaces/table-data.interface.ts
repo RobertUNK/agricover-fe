@@ -21,4 +21,5 @@ export interface TableData {
   partialDelivery: string;
   totalBlockage: string;
   orderDetails: OrderDetails[];
+  highlight?: boolean;
 }
