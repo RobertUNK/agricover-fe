@@ -1,0 +1,80 @@
+<div class="sidebar-overlay" (click)="closeSidebar()">
+  <div class="sidebar-content" (click)="$event.stopPropagation()">
+    <div class="sidebar-content__close-icon" (click)="closeSidebar()">
+      <img src="/assets/images/close-icon.svg" />
+    </div>
+    <div class="sidebar-content__header">
+      <div class="left-side">
+        <div class="title">Comanda Livrare</div>
+        <div class="client">{{ tableRowData?.client }}</div>
+        <div class="order-number">{{ tableRowData?.orderNumber }}</div>
+      </div>
+      <div class="right-side">
+        <div class="card">
+          <div class="card__label">Agent</div>
+          <div class="card__value">{{ tableRowData?.agent }}</div>
+        </div>
+        <div class="card">
+          <div class="card__label">Status</div>
+          <div class="card__value">{{ tableRowData?.status }}</div>
+        </div>
+        <div class="card">
+          <div class="card__label">Motiv</div>
+          <div class="card__value">{{ tableRowData?.reason }}</div>
+        </div>
+        <div class="card red">
+          <div class="card__label">Durata blocare</div>
+          <div class="card__value">{{ tableRowData?.totalBlockage }}</div>
+        </div>
+        <div class="card">
+          <div class="card__label">Data</div>
+          <div class="card__value">{{ tableRowData?.data }}</div>
+        </div>
+        <div class="card">
+          <div class="card__label">Zona</div>
+          <div class="card__value">{{ tableRowData?.zone }}</div>
+        </div>
+        <div class="card">
+          <div class="card__label">Responsabil</div>
+          <div class="card__value">{{ tableRowData?.responsive }}</div>
+        </div>
+        <div class="card">
+          <div class="card__label">Livrare partiala</div>
+          <div class="card__value">{{ tableRowData?.partialDelivery }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-content__table-container">
+      <div class="header">
+        <div class="row-wrapper">
+          <div class="row">
+            <div class="column">Nr pozitie</div>
+            <div class="column">Cod Material</div>
+            <div class="column">Denumire material</div>
+            <div class="column">Cantitate</div>
+            <div class="column">U.M</div>
+            <div class="column">Unitate logistica</div>
+            <div class="column">Stoc</div>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="row-wrapper scrollable">
+          @for (item of tableRowData?.orderDetails; track item.materialCode) {
+          <div class="row" [ngClass]="{ warning: item.warning }">
+            <div class="column">{{ item.positionNumber }}</div>
+            <div class="column">{{ item.materialCode }}</div>
+            <div class="column">{{ item.materialName }}</div>
+            <div class="column">{{ item.quantity }}</div>
+            <div class="column">{{ item.um }}</div>
+            <div class="column">{{ item.logisticUnity }}</div>
+            <div class="column">
+              {{ item.stock }} <img *ngIf="item.warning" src="/assets/images/warning-icon.svg" />
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

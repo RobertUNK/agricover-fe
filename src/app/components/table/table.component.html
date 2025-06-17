@@ -1,0 +1,48 @@
+<div class="table-container">
+  <div class="table-container__header">
+    <div class="row-wrapper">
+      <div class="row">
+        <div class="column">{{ title }}</div>
+        <div class="column">Nr Comanda</div>
+        <div class="column">Client</div>
+        <div class="column">Agent</div>
+        <div class="column">Data</div>
+        <div class="column">Zona</div>
+        <div class="column">Status</div>
+        <div class="column">Motiv</div>
+        <div class="column">Responsabil</div>
+        <div class="column">Durata Blocare</div>
+        <div class="column">Livrare partiala</div>
+        <div class="column total">
+          <img src="/assets/images/timer-icon.svg" />Total blocaj
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="table-container__body">
+    <div class="row-wrapper scrollable">
+      @for (item of data; track item.orderNumber) {
+      <div class="row" (click)="openRowDetails(item)">
+        <div class="column">
+          <div class="background" (click)="addButtonClicked(item)">
+            <img src="/assets/images/add-icon.svg" />
+          </div>
+        </div>
+        <div class="column">{{ item.orderNumber }}</div>
+        <div class="column">{{ item.client }}</div>
+        <div class="column">{{ item.agent }}</div>
+        <div class="column">{{ item.data }}</div>
+        <div class="column">{{ item.zone }}</div>
+        <div class="column status">
+          <span>{{ item.status }}</span>
+        </div>
+        <div class="column">{{ item.reason }}</div>
+        <div class="column">{{ item.responsive }}</div>
+        <div class="column">{{ item.lockDuration }}</div>
+        <div class="column">{{ item.partialDelivery }}</div>
+        <div class="column total">{{ item.totalBlockage }}</div>
+      </div>
+      }
+    </div>
+  </div>
+</div>

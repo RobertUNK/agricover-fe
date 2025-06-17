@@ -1,0 +1,16 @@
+<div class="homepage-container">
+  <app-header></app-header>
+  <div class="tables-wrapper">
+    <app-table
+      [title]="salesTitle"
+      [data]="salesData"
+      (onRowClicked)="onTableRowClicked($event)"
+    ></app-table>
+    <app-table
+      [title]="purchasesTitle"
+      [data]="purchasesData"
+      (onRowClicked)="onTableRowClicked($event)"
+    ></app-table>
+  </div>
+  <app-sidebar [tableRowData]="selectedTableRow"></app-sidebar>
+</div>

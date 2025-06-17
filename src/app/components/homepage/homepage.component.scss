@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url("/assets/images/homepage-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tables-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; // 🔥 spațiu între tabele
+  padding: 30px 60px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+app-table {
+  flex: 1; // 🔥 fiecare tabel ia 50% din înălțimea rămasă
+  min-height: 0; // esențial pentru scroll în copil
+  overflow: hidden;
+  display: flex; // forțăm conținutul intern să crească
+}
