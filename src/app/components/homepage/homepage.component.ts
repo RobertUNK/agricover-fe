@@ -3203,6 +3203,8 @@ export class HomepageComponent {
   selectedTableRow: TableData | null = null;
   onTableRowClicked(data: TableData) {
     this.selectedTableRow = data;
-    console.log(this.selectedTableRow);
+  }
+  onCloseSidebar(event: boolean) {
+    this.selectedTableRow = null;
   }
 }

@@ -1,4 +1,10 @@
-import { Component, HostBinding, Input } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostBinding,
+  Input,
+  Output,
+} from '@angular/core';
 import { TableData } from '../../interfaces/table-data.interface';
 import { NgClass, NgIf } from '@angular/common';
 
@@ -10,6 +16,7 @@ import { NgClass, NgIf } from '@angular/common';
 })
 export class SidebarComponent {
   private _tableRowData: TableData | null = null;
+  @Output() onCloseSidebar = new EventEmitter<boolean>();
 
   @Input() set tableRowData(data: TableData | null) {
     this._tableRowData = data;
@@ -24,5 +31,6 @@ export class SidebarComponent {
 
   closeSidebar() {
     this.isOpen = false;
+    this.onCloseSidebar.emit(true);
   }
 }

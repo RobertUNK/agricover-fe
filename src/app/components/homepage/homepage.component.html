@@ -12,5 +12,8 @@
       (onRowClicked)="onTableRowClicked($event)"
     ></app-table>
   </div>
-  <app-sidebar [tableRowData]="selectedTableRow"></app-sidebar>
+  <app-sidebar
+    [tableRowData]="selectedTableRow"
+    (onCloseSidebar)="onCloseSidebar($event)"
+  ></app-sidebar>
 </div>

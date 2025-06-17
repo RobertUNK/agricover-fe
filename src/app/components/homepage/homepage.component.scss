@@ -19,15 +19,22 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 30px; // 🔥 spațiu între tabele
+  gap: 30px;
   padding: 30px 60px;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 app-table {
-  flex: 1; // 🔥 fiecare tabel ia 50% din înălțimea rămasă
-  min-height: 0; // esențial pentru scroll în copil
+  flex: 1;
+  min-height: 0;
   overflow: hidden;
-  display: flex; // forțăm conținutul intern să crească
+  display: flex;
+}
+
+@media (max-width: 1728px) {
+  .tables-wrapper {
+    gap: 15px;
+    padding: 15px 30px;
+  }
 }

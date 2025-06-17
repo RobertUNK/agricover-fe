@@ -60,7 +60,7 @@
       </div>
       <div class="body">
         <div class="row-wrapper scrollable">
-          @for (item of tableRowData?.orderDetails; track item.materialCode) {
+          @for (item of tableRowData?.orderDetails; track item.positionNumber) {
           <div class="row" [ngClass]="{ warning: item.warning }">
             <div class="column">{{ item.positionNumber }}</div>
             <div class="column">{{ item.materialCode }}</div>

@@ -34,3 +34,27 @@
     }
   }
 }
+@media (max-width: 1728px) {
+  .header-container {
+    height: 90px;
+    padding: 16px 30px;
+    &__menu {
+      width: 32px;
+      height: 32px;
+    }
+    &__logo {
+      width: 62.5px;
+      height: 39px;
+    }
+    &__dropdown {
+      padding: 19px 20px;
+      font-size: 16px;
+      border-radius: 12px;
+      img {
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+      }
+    }
+  }
+}

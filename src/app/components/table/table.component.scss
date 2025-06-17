@@ -79,6 +79,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            box-sizing: border-box;
             .background {
               width: 87px;
               height: 69px;
@@ -160,5 +161,64 @@
 
   .row .column:first-child {
     text-align: center;
+  }
+}
+
+@media (max-width: 1728px) {
+  .table-container {
+    padding-bottom: 30px;
+    &__header {
+      .row-wrapper {
+        .row {
+          .column {
+            font-size: 16px;
+            &:first-child {
+              font-size: 22px;
+            }
+            &.total {
+              img {
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__body {
+      .row-wrapper {
+        .row {
+          .column {
+            font-size: 16px;
+            &:first-child {
+              .background {
+                width: 43px;
+                height: 34px;
+                border-radius: 12px;
+              }
+              img {
+                width: 17.5px;
+                height: 17.5px;
+              }
+            }
+            &.status {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .row {
+      height: 52px;
+    }
+
+    .column {
+      font-size: 0.5rem;
+    }
   }
 }
