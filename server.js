@@ -70,8 +70,6 @@ for (let i = 0; i < 5; i++) {
 }
 
 app.get("/sales", (req, res) => {
-  currentSalesId++;
-
   if (salesData.length >= 50) {
     salesData = [];
     for (let i = 0; i < 5; i++) {
@@ -79,6 +77,7 @@ app.get("/sales", (req, res) => {
       salesData.unshift(generateSales(currentSalesId));
     }
   } else {
+    currentSalesId++;
     const newSale = generateSales(currentSalesId);
     salesData.unshift(newSale);
   }
@@ -87,8 +86,6 @@ app.get("/sales", (req, res) => {
 });
 
 app.get("/purchases", (req, res) => {
-  currentPurchasesId++;
-
   if (purchasesData.length >= 50) {
     purchasesData = [];
     for (let i = 0; i < 5; i++) {
@@ -96,6 +93,7 @@ app.get("/purchases", (req, res) => {
       purchasesData.unshift(generatePurchases(currentPurchasesId));
     }
   } else {
+    currentPurchasesId++;
     const newPurchase = generatePurchases(currentPurchasesId);
     purchasesData.unshift(newPurchase);
   }
