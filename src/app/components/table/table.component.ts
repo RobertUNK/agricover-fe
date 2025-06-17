@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TableData } from '../../interfaces/table-data.interface';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-table',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './table.component.html',
   styleUrl: './table.component.scss',
 })
@@ -13,12 +14,16 @@ export class TableComponent {
   @Output() onRowClicked = new EventEmitter<TableData>();
 
   getStatusClass(status: string): string {
-    return (
-      {
-        Blocat: 'badge-red',
-        Atentie: 'badge-orange',
-      }[status] || ''
-    );
+    switch (status?.toLowerCase()) {
+      case 'blocat':
+        return 'blocked';
+      case 'în așteptare':
+        return 'waiting';
+      case 'livrat':
+        return 'delivered';
+      default:
+        return '';
+    }
   }
 
   getBadgeColor(minute: string): string {

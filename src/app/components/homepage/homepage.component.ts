@@ -37,6 +37,7 @@ export class HomepageComponent {
           this.salesData.set(data);
           this.lastSalesIds = new Set(data.map((i) => i.orderNumber));
           this.isFirstSalesLoad = false;
+          this.onSort('orderNumber', 'desc');
           return;
         }
 
@@ -70,8 +71,9 @@ export class HomepageComponent {
 
         if (this.isFirstPurchasesLoad) {
           this.purchasesData.set(data);
-          this.lastPurchasesIds = new Set(data.map((i) => i.orderNumber)); // 🔧 aici era problema
+          this.lastPurchasesIds = new Set(data.map((i) => i.orderNumber));
           this.isFirstPurchasesLoad = false;
+          this.onSort('orderNumber', 'desc');
           return;
         }
 
@@ -110,26 +112,31 @@ export class HomepageComponent {
     this.selectedTableRow = null;
   }
 
-  onSort(sortKey: keyof TableData) {
-    const safeString = (value: unknown): string => {
-      if (Array.isArray(value)) return JSON.stringify(value);
-      if (typeof value === 'boolean') return value ? 'true' : 'false';
-      if (typeof value === 'string') return value;
-      return value?.toString() ?? '';
+  onSort(sortKey: keyof TableData, direction: 'asc' | 'desc' = 'asc') {
+    const compare = (a: TableData, b: TableData): number => {
+      const aVal = a[sortKey];
+      const bVal = b[sortKey];
+
+      // Special case: sortare numerică pentru orderNumber
+      if (sortKey === 'orderNumber') {
+        const aNum = Number(aVal);
+        const bNum = Number(bVal);
+        return direction === 'asc' ? aNum - bNum : bNum - aNum;
+      }
+
+      const aStr = String(aVal).toLowerCase();
+      const bStr = String(bVal).toLowerCase();
+      return direction === 'asc'
+        ? aStr.localeCompare(bStr)
+        : bStr.localeCompare(aStr);
     };
 
-    const sortedSales = [...this.salesData()].sort((a, b) =>
-      safeString(a[sortKey]).localeCompare(safeString(b[sortKey]))
-    );
-    this.salesData.set(sortedSales);
-
-    const sortedPurchases = [...this.purchasesData()].sort((a, b) =>
-      safeString(a[sortKey]).localeCompare(safeString(b[sortKey]))
-    );
-    this.purchasesData.set(sortedPurchases);
+    this.salesData.set([...this.salesData()].sort(compare));
+    this.purchasesData.set([...this.purchasesData()].sort(compare));
   }
 
   onSortKey(key: string) {
-    this.onSort(key as keyof TableData);
+    const direction = key === 'orderNumber' ? 'desc' : 'asc';
+    this.onSort(key as keyof TableData, direction);
   }
 }

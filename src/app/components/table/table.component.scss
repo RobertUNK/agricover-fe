@@ -113,6 +113,17 @@
               line-height: 1;
               color: white;
               white-space: nowrap;
+              &.blocked {
+                background-color: #e90b0b;
+              }
+
+              &.waiting {
+                background-color: #ffa500;
+              }
+
+              &.delivered {
+                background-color: #28a745;
+              }
             }
           }
           &.total {

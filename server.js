@@ -1,5 +1,8 @@
 const express = require("express");
 const cors = require("cors");
+const { faker } = require("@faker-js/faker");
+
+faker.locale = "ro"; // limba română (parțial suportată)
 
 const app = express();
 const PORT = 3000;
@@ -10,77 +13,48 @@ app.use(express.json());
 let currentSalesId = 100000;
 let currentPurchasesId = 100000;
 
-const generateSales = (id) => ({
+const generateOrder = (id) => ({
   orderNumber: `${id}`,
-  client: "AgroFirm SRL",
-  agent: "Ion Popescu",
-  data: "17 Iunie 2025",
-  zone: "Buzău",
-  status: "Blocat",
-  reason: "Credit expirat",
-  responsive: "Elena Ionescu",
-  lockDuration: "20 min",
-  partialDelivery: "Da",
-  totalBlockage: "40 min",
+  client: faker.company.name(),
+  agent: faker.person.fullName(),
+  data: faker.date.recent().toLocaleDateString("ro-RO"),
+  zone: faker.location.city(),
+  status: faker.helpers.arrayElement(["Blocat", "În așteptare", "Livrat"]),
+  reason: faker.helpers.arrayElement([
+    "Credit expirat",
+    "Depășire termen plată",
+    "Stoc insuficient",
+  ]),
+  responsive: faker.person.fullName(),
+  lockDuration: `${faker.number.int({ min: 5, max: 45 })} min`,
+  partialDelivery: faker.helpers.arrayElement(["Da", "Nu"]),
+  totalBlockage: `${faker.number.int({ min: 10, max: 60 })} min`,
   orderDetails: [
     {
       positionNumber: "1",
-      materialCode: "MAT-001",
-      materialName: "Îngrășământ NP",
-      quantity: "50",
-      um: "kg",
-      logisticUnity: "Pallet",
-      stock: "120",
-      warning: false,
+      materialCode: `MAT-${faker.number.int({ min: 100, max: 999 })}`,
+      materialName: faker.commerce.productName(),
+      quantity: faker.number.int({ min: 10, max: 100 }).toString(),
+      um: faker.helpers.arrayElement(["kg", "l", "buc"]),
+      logisticUnity: faker.helpers.arrayElement(["Pallet", "Box", "Bag"]),
+      stock: faker.number.int({ min: 0, max: 200 }).toString(),
+      warning: faker.datatype.boolean(),
     },
     {
       positionNumber: "2",
-      materialCode: "MAT-002",
-      materialName: "Semințe porumb",
-      quantity: "30",
-      um: "kg",
-      logisticUnity: "Box",
-      stock: "0",
-      warning: true,
+      materialCode: `MAT-${faker.number.int({ min: 100, max: 999 })}`,
+      materialName: faker.commerce.productName(),
+      quantity: faker.number.int({ min: 10, max: 100 }).toString(),
+      um: faker.helpers.arrayElement(["kg", "l", "buc"]),
+      logisticUnity: faker.helpers.arrayElement(["Pallet", "Box", "Bag"]),
+      stock: faker.number.int({ min: 0, max: 200 }).toString(),
+      warning: faker.datatype.boolean(),
     },
   ],
 });
 
-const generatePurchases = (id) => ({
-  orderNumber: `${id}`,
-  client: "AgroFirm SRL",
-  agent: "Ion Popescu",
-  data: "17 Iunie 2025",
-  zone: "Buzău",
-  status: "Blocat",
-  reason: "Credit expirat",
-  responsive: "Elena Ionescu",
-  lockDuration: "20 min",
-  partialDelivery: "Da",
-  totalBlockage: "40 min",
-  orderDetails: [
-    {
-      positionNumber: "1",
-      materialCode: "MAT-001",
-      materialName: "Îngrășământ NP",
-      quantity: "50",
-      um: "kg",
-      logisticUnity: "Pallet",
-      stock: "120",
-      warning: false,
-    },
-    {
-      positionNumber: "2",
-      materialCode: "MAT-002",
-      materialName: "Semințe porumb",
-      quantity: "30",
-      um: "kg",
-      logisticUnity: "Box",
-      stock: "0",
-      warning: true,
-    },
-  ],
-});
+const generateSales = generateOrder;
+const generatePurchases = generateOrder;
 
 let salesData = [];
 let purchasesData = [];
