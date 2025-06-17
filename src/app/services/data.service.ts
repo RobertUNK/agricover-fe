@@ -10,12 +10,12 @@ export class DataService {
   private purchasesEndpoint = 'http://localhost:3000/purchases';
 
   pollSales(): Observable<TableData[]> {
-    return timer(0, 60000).pipe(
+    return timer(0, 10000).pipe(
       switchMap(() => this.http.get<TableData[]>(this.salesEndpoint))
     );
   }
   pollPurchases(): Observable<TableData[]> {
-    return timer(0, 60000).pipe(
+    return timer(0, 10000).pipe(
       switchMap(() => this.http.get<TableData[]>(this.purchasesEndpoint))
     );
   }
