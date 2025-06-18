@@ -1,5 +1,5 @@
 :host {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 .table-container {
   padding-bottom: 60px;
@@ -113,17 +113,7 @@
               line-height: 1;
               color: white;
               white-space: nowrap;
-              &.blocked {
-                background-color: #e90b0b;
-              }
-
-              &.waiting {
-                background-color: #ffa500;
-              }
-
-              &.delivered {
-                background-color: #28a745;
-              }
+              background-color: #e90b0b;
             }
           }
           &.total {

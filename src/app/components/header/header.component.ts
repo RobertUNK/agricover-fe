@@ -11,7 +11,7 @@ export class HeaderComponent {
   @Output() onSelectSortingOption = new EventEmitter<string>();
 
   isDropdownOpen = false;
-  selectedOption = 'Nr Comanda';
+  selectedOption = 'Total blocaj';
   dropdownOptions: string[] = [
     'Vanzari',
     'Nr Comanda',

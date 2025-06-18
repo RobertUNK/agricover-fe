@@ -25,6 +25,9 @@ export class HomepageComponent {
   purchasesTitle = 'Achizitii';
   selectedTableRow: TableData | null = null;
 
+  currentSortKey: keyof TableData = 'totalBlockage';
+  currentSortDirection: 'asc' | 'desc' = 'desc';
+
   constructor() {
     effect(() => {
       this.dataService.pollSales().subscribe((data) => {
@@ -37,7 +40,7 @@ export class HomepageComponent {
           this.salesData.set(data);
           this.lastSalesIds = new Set(data.map((i) => i.orderNumber));
           this.isFirstSalesLoad = false;
-          this.onSort('orderNumber', 'desc');
+          this.onSort(this.currentSortKey, this.currentSortDirection);
           return;
         }
 
@@ -48,6 +51,7 @@ export class HomepageComponent {
             highlight: true,
           }));
           this.salesData.set([...highlighted, ...current]);
+          this.onSort(this.currentSortKey, this.currentSortDirection);
 
           setTimeout(() => {
             const updated = this.salesData().map((item) => ({
@@ -73,7 +77,7 @@ export class HomepageComponent {
           this.purchasesData.set(data);
           this.lastPurchasesIds = new Set(data.map((i) => i.orderNumber));
           this.isFirstPurchasesLoad = false;
-          this.onSort('orderNumber', 'desc');
+          this.onSort(this.currentSortKey, this.currentSortDirection);
           return;
         }
 
@@ -84,6 +88,7 @@ export class HomepageComponent {
             highlight: true,
           }));
           this.purchasesData.set([...highlighted, ...current]);
+          this.onSort(this.currentSortKey, this.currentSortDirection);
 
           setTimeout(() => {
             const updated = this.purchasesData().map((item) => ({
@@ -108,25 +113,27 @@ export class HomepageComponent {
     this.selectedTableRow = data;
   }
 
-  onCloseSidebar(boolean: boolean) {
+  onCloseSidebar(_: boolean) {
     this.selectedTableRow = null;
   }
 
-  onSort(sortKey: keyof TableData, direction: 'asc' | 'desc' = 'asc') {
+  onSort(sortKey: keyof TableData, direction: 'asc' | 'desc' = 'desc') {
+    this.currentSortKey = sortKey;
+    this.currentSortDirection = direction;
+
     const compare = (a: TableData, b: TableData): number => {
       const aVal = a[sortKey];
       const bVal = b[sortKey];
 
-      // Special case: sortare numerică pentru orderNumber
-      if (sortKey === 'orderNumber') {
+      if (!isNaN(Number(aVal)) && !isNaN(Number(bVal))) {
         const aNum = Number(aVal);
         const bNum = Number(bVal);
         return direction === 'asc' ? aNum - bNum : bNum - aNum;
       }
 
-      const aStr = String(aVal).toLowerCase();
-      const bStr = String(bVal).toLowerCase();
-      return direction === 'asc'
+      const aStr = String(aVal ?? '').toLowerCase();
+      const bStr = String(bVal ?? '').toLowerCase();
+      return direction === 'desc'
         ? aStr.localeCompare(bStr)
         : bStr.localeCompare(aStr);
     };
@@ -136,7 +143,13 @@ export class HomepageComponent {
   }
 
   onSortKey(key: string) {
-    const direction = key === 'orderNumber' ? 'desc' : 'asc';
-    this.onSort(key as keyof TableData, direction);
+    const typedKey = key as keyof TableData;
+
+    const direction =
+      this.currentSortKey === typedKey && this.currentSortDirection === 'desc'
+        ? 'asc'
+        : 'desc';
+
+    this.onSort(typedKey, direction);
   }
 }

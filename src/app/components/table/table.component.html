@@ -25,7 +25,7 @@
       <div class="row" [class.highlight]="item.highlight">
         <div class="column">
           <div class="background" (click)="openRowDetails(item)">
-            <img src="/assets/images/add-icon.svg" />
+            <img src="/assets/images/details-icon.png" />
           </div>
         </div>
         <div class="column">{{ item.orderNumber }}</div>
@@ -34,15 +34,15 @@
         <div class="column">{{ item.data }}</div>
         <div class="column">{{ item.zone }}</div>
         <div class="column status">
-          <span [ngClass]="getStatusClass(item.status)">
+          <span>
             {{ item.status }}
           </span>
         </div>
         <div class="column">{{ item.reason }}</div>
         <div class="column">{{ item.responsive }}</div>
-        <div class="column">{{ item.lockDuration }}</div>
+        <div class="column">{{ item.lockDuration }} min</div>
         <div class="column">{{ item.partialDelivery }}</div>
-        <div class="column total">{{ item.totalBlockage }}</div>
+        <div class="column total">{{ item.totalBlockage }} min</div>
       </div>
       }
     </div>

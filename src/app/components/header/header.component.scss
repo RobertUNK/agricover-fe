@@ -1,5 +1,5 @@
 .header-container {
-  height: 180px;
+  height: 128px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -8,34 +8,32 @@
   justify-content: space-between;
   background-color: #ffffff;
   padding: 32px 60px;
-  &__menu {
-    width: 64px;
-    height: 64px;
-    cursor: pointer;
-  }
   &__logo {
-    width: 125px;
-    height: 78px;
+    width: 96px;
+    height: 50px;
   }
   &__dropdown-wrapper {
     position: relative;
-    display: inline-block;
-    min-width: 164px;
+    display: flex;
+    justify-content: flex-end;
     .dropdown {
-      padding: 38px 40px;
       display: flex;
       flex-direction: row;
       align-items: center;
       font-weight: 400;
       font-size: 32px;
-      border: 1px solid #000000;
-      border-radius: 24px;
-      justify-content: space-between;
+      min-width: 164px;
       cursor: pointer;
+      .label {
+        margin-right: 16px;
+      }
+      .value {
+        font-weight: 700;
+      }
       img {
         width: 40px;
         height: 40px;
-        margin-left: 16px;
+        margin-left: 4px;
       }
     }
     .dropdown-list {
@@ -43,7 +41,6 @@
       top: calc(100% + 10px);
       right: 0;
       background: white;
-      border: 1px solid #000000;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       list-style: none;
@@ -62,7 +59,7 @@
           border-top-right-radius: 12px;
         }
 
-         &:last-child {
+        &:last-child {
           border-bottom-left-radius: 12px;
           border-bottom-right-radius: 12px;
         }
@@ -81,25 +78,19 @@
 }
 @media (max-width: 1728px) {
   .header-container {
-    height: 90px;
+    height: 64px;
     padding: 16px 30px;
-    &__menu {
-      width: 32px;
-      height: 32px;
-    }
     &__logo {
-      width: 62.5px;
-      height: 39px;
+      width: 46px;
+      height: 24px;
     }
     &__dropdown-wrapper {
       .dropdown {
-        padding: 19px 20px;
         font-size: 16px;
         border-radius: 12px;
         img {
           width: 20px;
           height: 20px;
-          margin-left: 8px;
         }
       }
       .dropdown-list {

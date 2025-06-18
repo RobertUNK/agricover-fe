@@ -1,9 +1,9 @@
 :host {
   position: absolute;
-  top: 180px;
+  top: 128px;
   left: 0;
   width: 100vw;
-  height: calc(100% - 180px);
+  height: calc(100% - 128px);
   display: flex;
   flex-direction: column;
   pointer-events: none;
@@ -230,8 +230,8 @@
 
 @media (max-width: 1728px) {
   :host {
-    top: 90px;
-    height: calc(100% - 90px);
+    top: 64px;
+    height: calc(100% - 64px);
   }
 
   .sidebar-content {

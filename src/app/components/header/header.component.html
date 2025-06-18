@@ -1,9 +1,10 @@
 <div class="header-container">
-  <img class="header-container__menu" src="/assets/images/menu-icon.svg" />
   <img class="header-container__logo" src="/assets/images/agricover-logo.svg" />
   <div class="header-container__dropdown-wrapper">
     <div class="dropdown" (click)="toggleDropdown()">
-      {{ selectedOption }} <img src="/assets/images/arrow-down-icon.svg" />
+      <span class="label"> Sort by:</span>
+      <span class="value">{{ selectedOption }}</span>
+      <img src="/assets/images/arrow-down-icon.svg" />
     </div>
     @if (isDropdownOpen) {
     <ul class="dropdown-list">

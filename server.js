@@ -19,16 +19,16 @@ const generateOrder = (id) => ({
   agent: faker.person.fullName(),
   data: faker.date.recent().toLocaleDateString("ro-RO"),
   zone: faker.location.city(),
-  status: faker.helpers.arrayElement(["Blocat", "În așteptare", "Livrat"]),
+  status: faker.helpers.arrayElement(["Blocat"]),
   reason: faker.helpers.arrayElement([
     "Credit expirat",
     "Depășire termen plată",
     "Stoc insuficient",
   ]),
   responsive: faker.person.fullName(),
-  lockDuration: `${faker.number.int({ min: 5, max: 45 })} min`,
+  lockDuration: `${faker.number.int({ min: 5, max: 45 })}`,
   partialDelivery: faker.helpers.arrayElement(["Da", "Nu"]),
-  totalBlockage: `${faker.number.int({ min: 10, max: 60 })} min`,
+  totalBlockage: `${faker.number.int({ min: 10, max: 60 })}`,
   orderDetails: [
     {
       positionNumber: "1",
