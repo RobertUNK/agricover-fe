@@ -13,11 +13,8 @@ import { DataService } from '../../services/data.service';
   styleUrl: './homepage.component.scss',
 })
 export class HomepageComponent {
-  private isFirstSalesLoad = true;
-  private isFirstPurchasesLoad = true;
   private dataService = inject(DataService);
-  private lastSalesIds = new Set<string>();
-  private lastPurchasesIds = new Set<string>();
+
   salesData = signal<TableData[]>([]);
   purchasesData = signal<TableData[]>([]);
 
@@ -31,82 +28,15 @@ export class HomepageComponent {
   constructor() {
     effect(() => {
       this.dataService.pollSales().subscribe((data) => {
-        const current = this.salesData();
-        const newItems = data.filter(
-          (item) => !this.lastSalesIds.has(item.orderNumber)
-        );
-
-        if (this.isFirstSalesLoad) {
-          this.salesData.set(data);
-          this.lastSalesIds = new Set(data.map((i) => i.orderNumber));
-          this.isFirstSalesLoad = false;
-          this.onSort(this.currentSortKey, this.currentSortDirection);
-          return;
-        }
-
-        if (newItems.length) {
-          this.playBeep();
-          const highlighted = newItems.map((item) => ({
-            ...item,
-            highlight: true,
-          }));
-          this.salesData.set([...highlighted, ...current]);
-          this.onSort(this.currentSortKey, this.currentSortDirection);
-
-          setTimeout(() => {
-            const updated = this.salesData().map((item) => ({
-              ...item,
-              highlight: false,
-            }));
-            this.salesData.set(updated);
-          }, 3500);
-        }
-
-        this.lastSalesIds = new Set(data.map((i) => i.orderNumber));
+        this.salesData.set(this.sortData(data));
       });
     });
 
     effect(() => {
       this.dataService.pollPurchases().subscribe((data) => {
-        const current = this.purchasesData();
-        const newItems = data.filter(
-          (item) => !this.lastPurchasesIds.has(item.orderNumber)
-        );
-
-        if (this.isFirstPurchasesLoad) {
-          this.purchasesData.set(data);
-          this.lastPurchasesIds = new Set(data.map((i) => i.orderNumber));
-          this.isFirstPurchasesLoad = false;
-          this.onSort(this.currentSortKey, this.currentSortDirection);
-          return;
-        }
-
-        if (newItems.length) {
-          this.playBeep();
-          const highlighted = newItems.map((item) => ({
-            ...item,
-            highlight: true,
-          }));
-          this.purchasesData.set([...highlighted, ...current]);
-          this.onSort(this.currentSortKey, this.currentSortDirection);
-
-          setTimeout(() => {
-            const updated = this.purchasesData().map((item) => ({
-              ...item,
-              highlight: false,
-            }));
-            this.purchasesData.set(updated);
-          }, 3500);
-        }
-
-        this.lastPurchasesIds = new Set(data.map((i) => i.orderNumber));
+        this.purchasesData.set(this.sortData(data));
       });
     });
-  }
-
-  playBeep() {
-    const audio = new Audio('/assets/sounds/notification.mp3');
-    audio.play();
   }
 
   onTableRowClicked(data: TableData) {
@@ -121,13 +51,32 @@ export class HomepageComponent {
     this.currentSortKey = sortKey;
     this.currentSortDirection = direction;
 
-    const compare = (a: TableData, b: TableData): number => {
+    this.salesData.set(this.sortData(this.salesData()));
+    this.purchasesData.set(this.sortData(this.purchasesData()));
+  }
+
+  onSortKey(key: string) {
+    const typedKey = key as keyof TableData;
+    const direction =
+      this.currentSortKey === typedKey && this.currentSortDirection === 'desc'
+        ? 'asc'
+        : 'desc';
+
+    this.onSort(typedKey, direction);
+  }
+
+  private sortData(data: TableData[]): TableData[] {
+    const sortKey = this.currentSortKey;
+    const direction = this.currentSortDirection;
+
+    return [...data].sort((a, b) => {
       const aVal = a[sortKey];
       const bVal = b[sortKey];
 
-      if (!isNaN(Number(aVal)) && !isNaN(Number(bVal))) {
-        const aNum = Number(aVal);
-        const bNum = Number(bVal);
+      const aNum = Number(aVal ?? 0);
+      const bNum = Number(bVal ?? 0);
+
+      if (!isNaN(aNum) && !isNaN(bNum)) {
         return direction === 'asc' ? aNum - bNum : bNum - aNum;
       }
 
@@ -136,20 +85,6 @@ export class HomepageComponent {
       return direction === 'desc'
         ? aStr.localeCompare(bStr)
         : bStr.localeCompare(aStr);
-    };
-
-    this.salesData.set([...this.salesData()].sort(compare));
-    this.purchasesData.set([...this.purchasesData()].sort(compare));
-  }
-
-  onSortKey(key: string) {
-    const typedKey = key as keyof TableData;
-
-    const direction =
-      this.currentSortKey === typedKey && this.currentSortDirection === 'desc'
-        ? 'asc'
-        : 'desc';
-
-    this.onSort(typedKey, direction);
+    });
   }
 }

@@ -22,7 +22,7 @@
   <div class="table-container__body">
     <div class="row-wrapper scrollable">
       @for (item of data; track item.orderNumber) {
-      <div class="row" [class.highlight]="item.highlight">
+      <div class="row">
         <div class="column">
           <div class="background" (click)="openRowDetails(item)">
             <img src="/assets/images/details-icon.png" />
