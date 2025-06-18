@@ -72,6 +72,7 @@ for (let i = 0; i < 5; i++) {
 app.get("/sales", (req, res) => {
   if (salesData.length >= 50) {
     salesData = [];
+    currentSalesId = 100000;
     for (let i = 0; i < 5; i++) {
       currentSalesId++;
       salesData.unshift(generateSales(currentSalesId));
@@ -88,6 +89,7 @@ app.get("/sales", (req, res) => {
 app.get("/purchases", (req, res) => {
   if (purchasesData.length >= 50) {
     purchasesData = [];
+    currentPurchasesId = 100000;
     for (let i = 0; i < 5; i++) {
       currentPurchasesId++;
       purchasesData.unshift(generatePurchases(currentPurchasesId));
