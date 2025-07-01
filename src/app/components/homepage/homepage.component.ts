@@ -1,9 +1,10 @@
-import { Component, signal, effect, inject } from '@angular/core';
+import { Component, signal, effect, inject, OnInit } from '@angular/core';
 import { TableData } from '../../interfaces/table-data.interface';
 import { TableComponent } from '../table/table.component';
 import { HeaderComponent } from '../header/header.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { DataService } from '../../services/data.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-homepage',
@@ -12,7 +13,7 @@ import { DataService } from '../../services/data.service';
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss',
 })
-export class HomepageComponent {
+export class HomepageComponent implements OnInit {
   private dataService = inject(DataService);
 
   salesData = signal<TableData[]>([]);
@@ -25,16 +26,13 @@ export class HomepageComponent {
   currentSortKey: keyof TableData = 'totalBlockage';
   currentSortDirection: 'asc' | 'desc' = 'desc';
 
-  constructor() {
-    effect(() => {
-      this.dataService.pollSales().subscribe((data) => {
-        this.salesData.set(this.sortData(data));
-      });
-    });
+  constructor(private authService: AuthService) {}
 
-    effect(() => {
-      this.dataService.pollPurchases().subscribe((data) => {
-        this.purchasesData.set(this.sortData(data));
+  ngOnInit() {
+    this.authService.ensureAuthenticated().then(() => {
+      this.dataService.pollOrders().subscribe(({ sales, purchases }) => {
+        this.salesData.set(this.sortData(sales));
+        this.purchasesData.set(this.sortData(purchases));
       });
     });
   }

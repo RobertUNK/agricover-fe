@@ -28,21 +28,29 @@
             <img src="/assets/images/details-icon.png" />
           </div>
         </div>
-        <div class="column">{{ item.orderNumber }}</div>
-        <div class="column">{{ item.client }}</div>
-        <div class="column">{{ item.agent }}</div>
-        <div class="column">{{ item.data }}</div>
-        <div class="column">{{ item.zone }}</div>
+        <div class="column" pTooltip="Enter your username" tooltipPosition="right">{{ displayValue(item.orderNumber) }}</div>
+        <div class="column">{{ displayValue(item.client) }}</div>
+        <div class="column">{{ displayValue(item.agent) }}</div>
+        <div class="column">{{ displayValue(formatDate(item.data)) }}</div>
+        <div class="column">{{ displayValue(item.zone) }}</div>
         <div class="column status">
-          <span>
-            {{ item.status }}
+          <span [ngClass]="{ 'has-status': item.status }">
+            {{ displayValue(item.status) }}
           </span>
         </div>
-        <div class="column">{{ item.reason }}</div>
-        <div class="column">{{ item.responsive }}</div>
-        <div class="column">{{ item.lockDuration }} min</div>
-        <div class="column">{{ item.partialDelivery }}</div>
-        <div class="column total">{{ item.totalBlockage }} min</div>
+        <div class="column">{{ displayValue(item.reason) }}</div>
+        <div class="column">{{ displayValue(item.responsive) }}</div>
+        <div class="column">{{ formatDuration(item.lockDuration) }}</div>
+
+        <div class="column">{{ displayValue(item.partialDelivery) }}</div>
+        <div
+          class="column total"
+          [ngClass]="{
+            'has-value': formatDuration(item.totalBlockage) !== '-'
+          }"
+        >
+          {{ formatDuration(item.totalBlockage) }}
+        </div>
       </div>
       }
     </div>

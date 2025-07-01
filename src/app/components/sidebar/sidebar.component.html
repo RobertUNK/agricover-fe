@@ -22,13 +22,20 @@
           <div class="card__label">Motiv</div>
           <div class="card__value">{{ tableRowData?.reason }}</div>
         </div>
-        <div class="card red">
+        <div
+          class="card"
+          [ngClass]="{
+            red: formatDuration(tableRowData?.totalBlockage) !== '-'
+          }"
+        >
           <div class="card__label">Durata blocare</div>
-          <div class="card__value">{{ tableRowData?.totalBlockage }}</div>
+          <div class="card__value">
+            {{ formatDuration(tableRowData?.totalBlockage) }}
+          </div>
         </div>
         <div class="card">
           <div class="card__label">Data</div>
-          <div class="card__value">{{ tableRowData?.data }}</div>
+          <div class="card__value">{{ formatDate(tableRowData?.data) }}</div>
         </div>
         <div class="card">
           <div class="card__label">Zona</div>
@@ -69,7 +76,8 @@
             <div class="column">{{ item.um }}</div>
             <div class="column">{{ item.logisticUnity }}</div>
             <div class="column">
-              {{ item.stock }} <img *ngIf="item.warning" src="/assets/images/warning-icon.svg" />
+              {{ item.stock }}
+              <img *ngIf="item.warning" src="/assets/images/warning-icon.svg" />
             </div>
           </div>
           }

@@ -24,13 +24,13 @@
       .row {
         .column {
           font-weight: 700;
-          font-size: 32px;
+          font-size: 28px;
           line-height: 100%;
           letter-spacing: 0;
           color: #000000;
           &:first-child {
             color: #131e29;
-            font-size: 44px;
+            font-size: 40px;
           }
           &.total {
             display: flex;
@@ -68,7 +68,7 @@
       .row {
         .column {
           font-weight: 400;
-          font-size: 32px;
+          font-size: 28px;
           line-height: 100%;
           letter-spacing: 0;
           color: #1e1103;
@@ -103,25 +103,32 @@
               align-items: center;
               justify-content: center;
               padding: 4px 8px;
-              background-color: #e90b0b;
               border-radius: 8px;
-              font-size: 28px;
+              font-size: 24px;
               line-height: 1;
-              color: white;
+              color: black;
               white-space: nowrap;
-              background-color: #e90b0b;
+              background-color: transparent;
+              &.has-status {
+                background-color: #e90b0b;
+                color: white;
+              }
             }
           }
           &.total {
-            background-color: #e90b0b;
+            background-color: transparent;
             height: 100%;
             width: 100%;
             box-sizing: border-box;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ffffff;
+            color: black;
             font-weight: 700;
+            &.has-value {
+              background-color: #e90b0b;
+              color: #ffffff;
+            }
           }
         }
       }
@@ -139,7 +146,19 @@
 
   .row {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns:
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr
+      2fr
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr;
     height: 104px;
     align-items: center;
     border-bottom: 2px solid #bcc3ca;
@@ -156,8 +175,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: left;
-    font-size: 1rem;
+    font-size: 12px;
     line-height: 1;
+    &:hover {
+      text-overflow: clip;
+      white-space: normal;
+      word-break: break-all;
+    }
   }
 
   .row .column:first-child {
@@ -172,9 +196,9 @@
       .row-wrapper {
         .row {
           .column {
-            font-size: 16px;
+            font-size: 14px;
             &:first-child {
-              font-size: 22px;
+              font-size: 20px;
             }
             &.total {
               img {
@@ -192,7 +216,7 @@
       .row-wrapper {
         .row {
           .column {
-            font-size: 16px;
+            font-size: 14px;
             &:first-child {
               .background {
                 width: 43px;
@@ -206,7 +230,7 @@
             }
             &.status {
               span {
-                font-size: 14px;
+                font-size: 12px;
               }
             }
           }

@@ -1,25 +1,25 @@
 interface OrderDetails {
-  positionNumber: string;
+  positionNumber: number;
   materialCode: string;
   materialName: string;
-  quantity: string;
+  quantity: number;
   um: string;
   logisticUnity: string;
-  stock: string;
+  stock: number;
   warning?: boolean;
 }
 export interface TableData {
   orderNumber: string;
   client: string;
   agent: string;
-  data: string;
+  data: number;
   zone: string;
   status: string;
   reason: string;
   responsive: string;
-  lockDuration: string;
+  lockDuration: number;
   partialDelivery: string;
-  totalBlockage: string;
+  totalBlockage: number;
   orderDetails: OrderDetails[];
   highlight?: boolean;
 }
