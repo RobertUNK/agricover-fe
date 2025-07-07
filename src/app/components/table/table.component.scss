@@ -24,13 +24,13 @@
       .row {
         .column {
           font-weight: 700;
-          font-size: 28px;
+          font-size: 1.6rem;
           line-height: 100%;
           letter-spacing: 0;
           color: #000000;
           &:first-child {
             color: #131e29;
-            font-size: 40px;
+            font-size: 2.3rem;
           }
           &.total {
             display: flex;
@@ -68,7 +68,7 @@
       .row {
         .column {
           font-weight: 400;
-          font-size: 28px;
+          font-size: 1.6rem;
           line-height: 100%;
           letter-spacing: 0;
           color: #1e1103;
@@ -104,7 +104,7 @@
               justify-content: center;
               padding: 4px 8px;
               border-radius: 8px;
-              font-size: 24px;
+              font-size: 1.4rem;
               line-height: 1;
               color: black;
               white-space: nowrap;
@@ -175,7 +175,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: left;
-    font-size: 12px;
+    font-size: 0.7rem;
     line-height: 1;
     &:hover {
       text-overflow: clip;
@@ -196,9 +196,9 @@
       .row-wrapper {
         .row {
           .column {
-            font-size: 14px;
+            font-size: 0.8rem;
             &:first-child {
-              font-size: 20px;
+              font-size: 1.2rem;
             }
             &.total {
               img {
@@ -216,7 +216,7 @@
       .row-wrapper {
         .row {
           .column {
-            font-size: 14px;
+            font-size: 0.8rem;
             &:first-child {
               .background {
                 width: 43px;
@@ -230,7 +230,7 @@
             }
             &.status {
               span {
-                font-size: 12px;
+                font-size: 0.7rem;
               }
             }
           }

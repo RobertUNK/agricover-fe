@@ -21,7 +21,7 @@
       flex-direction: row;
       align-items: center;
       font-weight: 400;
-      font-size: 32px;
+      font-size: 1.8rem;
       min-width: 164px;
       cursor: pointer;
       .label {
@@ -51,7 +51,7 @@
 
       li {
         padding: 12px 24px;
-        font-size: 16px;
+        font-size: 0.9rem;
         cursor: pointer;
         white-space: nowrap;
         &:first-child {
@@ -86,7 +86,7 @@
     }
     &__dropdown-wrapper {
       .dropdown {
-        font-size: 16px;
+        font-size: 0.9rem;
         border-radius: 12px;
         img {
           width: 20px;
@@ -97,7 +97,7 @@
         border-radius: 12px;
 
         li {
-          font-size: 16px;
+          font-size: 0.9rem;
         }
       }
     }

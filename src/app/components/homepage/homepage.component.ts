@@ -29,18 +29,18 @@ export class HomepageComponent implements OnInit {
   constructor(private authService: AuthService) {}
 
   ngOnInit() {
-    this.authService.ensureAuthenticated().then(() => {
-      const token = this.authService.getToken();
+    // this.authService.ensureAuthenticated().then(() => {
+    //   const token = this.authService.getToken();
 
-      if (!token) {
-        console.error('Token inexistent după login. Polling anulat.');
-        return;
-      }
+    //   if (!token) {
+    //     console.error('Token inexistent după login. Polling anulat.');
+    //     return;
+    //   }
 
-      this.dataService.pollOrders().subscribe(({ sales, purchases }) => {
-        this.salesData.set(this.sortData(sales));
-        this.purchasesData.set(this.sortData(purchases));
-      });
+    // });
+    this.dataService.pollOrders().subscribe(({ sales, purchases }) => {
+      this.salesData.set(this.sortData(sales));
+      this.purchasesData.set(this.sortData(purchases));
     });
   }
 
