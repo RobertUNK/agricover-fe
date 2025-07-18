@@ -18,8 +18,6 @@ export class HeaderComponent {
     'Client',
     'Agent',
     'Data',
-    'Zona',
-    'Status',
     'Motiv',
     'Responsabil',
     'Durata Blocare',

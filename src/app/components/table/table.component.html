@@ -2,18 +2,18 @@
   <div class="table-container__header">
     <div class="row-wrapper">
       <div class="row">
-        <div class="column">{{ title }}</div>
-        <div class="column">Nr Comanda</div>
-        <div class="column">Client</div>
-        <div class="column">Agent</div>
-        <div class="column">Data</div>
-        <div class="column">Zona</div>
-        <div class="column">Status</div>
-        <div class="column">Motiv</div>
-        <div class="column">Responsabil</div>
-        <div class="column">Durata Blocare</div>
-        <div class="column">Livrare partiala</div>
-        <div class="column total">
+        <div class="column"></div>
+        <div class="column" title="Nr Comanda">Nr Comanda</div>
+        <div class="column" title="Client">Client</div>
+        <div class="column" title="Agent">Agent</div>
+        <div class="column" title="Data">Data</div>
+        <!-- <div class="column" title="Zone">Zona</div> -->
+        <!-- <div class="column" title="Status">Status</div> -->
+        <div class="column" title="Motiv">Motiv</div>
+        <div class="column" title="Responsabil">Responsabil</div>
+        <div class="column" title="Durata Blocare">Durata Blocare</div>
+        <div class="column" title="Livrare partiala">Livrare partiala</div>
+        <div class="column total" title="Total blocaj">
           <img src="/assets/images/timer-icon.svg" />Total blocaj
         </div>
       </div>
@@ -28,26 +28,49 @@
             <img src="/assets/images/details-icon.png" />
           </div>
         </div>
-        <div class="column" pTooltip="Enter your username" tooltipPosition="right">{{ displayValue(item.orderNumber) }}</div>
-        <div class="column">{{ displayValue(item.client) }}</div>
-        <div class="column">{{ displayValue(item.agent) }}</div>
-        <div class="column">{{ displayValue(formatDate(item.data)) }}</div>
-        <div class="column">{{ displayValue(item.zone) }}</div>
-        <div class="column status">
+        <div
+          class="column"
+          pTooltip="Enter your username"
+          tooltipPosition="right"
+        >
+          {{ displayValue(item.orderNumber) }}
+        </div>
+        <div class="column" [title]="displayValue(item.client)">
+          {{ displayValue(item.client) }}
+        </div>
+        <div class="column" [title]="displayValue(item.agent)">
+          {{ displayValue(item.agent) }}
+        </div>
+        <div class="column" [title]="displayValue(item.data)">
+          {{ displayValue(formatDate(item.data)) }}
+        </div>
+        <!-- <div class="column" [title]="displayValue(item.zone)">
+          {{ displayValue(item.zone) }}
+        </div>
+        <div class="column status" [title]="displayValue(item.status)">
           <span [ngClass]="{ 'has-status': item.status }">
             {{ displayValue(item.status) }}
           </span>
+        </div> -->
+        <div class="column" [title]="displayValue(item.reason)">
+          {{ displayValue(item.reason) }}
         </div>
-        <div class="column">{{ displayValue(item.reason) }}</div>
-        <div class="column">{{ displayValue(item.responsive) }}</div>
-        <div class="column">{{ formatDuration(item.lockDuration) }}</div>
+        <div class="column" [title]="displayValue(item.responsive)">
+          {{ displayValue(item.responsive) }}
+        </div>
+        <div class="column" [title]="formatDuration(item.lockDuration)">
+          {{ formatDuration(item.lockDuration) }}
+        </div>
 
-        <div class="column">{{ displayValue(item.partialDelivery) }}</div>
+        <div class="column" [title]="displayValue(item.partialDelivery)">
+          {{ displayValue(item.partialDelivery) }}
+        </div>
         <div
           class="column total"
           [ngClass]="{
             'has-value': formatDuration(item.totalBlockage) !== '-'
           }"
+          [title]="formatDuration(item.totalBlockage)"
         >
           {{ formatDuration(item.totalBlockage) }}
         </div>

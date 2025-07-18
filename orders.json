@@ -1,0 +1,1581 @@
+{
+  "vanzari": [
+    {
+      "auart": "ZSSP",
+      "audat": "2025-04-24",
+      "vbeln": "0001021615",
+      "kunnr": "1000005333",
+      "name1": "CONCORDIA AGRO SRL",
+      "agent": "CLUB BUDESTI",
+      "timestamp1": 20250424131339,
+      "vkbur": "BUDS",
+      "vkburBezei": "Budesti Sud",
+      "status": "WF02-Aprobare Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250424131646,
+      "autlf": "",
+      "vdatu": "2025-04-24",
+      "objnr": "VB0001021615000000",
+      "stat": "E0005",
+      "erdat": "2025-04-24",
+      "erzet": "13:13:39",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 10,
+          "vrkme": "L",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-09",
+      "vbeln": "0001021573",
+      "kunnr": "1000018134",
+      "name1": "MILITARU N. VERGIL II",
+      "agent": "DISTRIBUTIE OLTENIA VEST AGENT 02 IULIAN LAURENTIU",
+      "timestamp1": 20241209133043,
+      "vkbur": "OLTV",
+      "vkburBezei": "Oltenia Vest",
+      "status": "SO01-Comanda Blocata Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241209133916,
+      "autlf": "X",
+      "vdatu": "2025-01-31",
+      "objnr": "VB0001021573000000",
+      "stat": "E0010",
+      "erdat": "2024-12-09",
+      "erzet": "13:30:43",
+      "pozitii": [
+        {
+          "posnr": 30,
+          "matnr": "000000000000715382",
+          "arktx": "Sam.FS P64LE280 150 FngOxa+Lbk",
+          "kwmeng": 5,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 20,
+          "matnr": "000000000000714387",
+          "arktx": "Sam.FS P64LE162 150 FngOxa+Lbk",
+          "kwmeng": 24,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 10,
+          "matnr": "000000000000714378",
+          "arktx": "Sam.FS P64LE99 150 FngOxa+Ldk",
+          "kwmeng": 36,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-09",
+      "vbeln": "0001021579",
+      "kunnr": "1000018134",
+      "name1": "MILITARU N. VERGIL II",
+      "agent": "DISTRIBUTIE OLTENIA VEST AGENT 02 IULIAN LAURENTIU",
+      "timestamp1": 20241209135555,
+      "vkbur": "OLTV",
+      "vkburBezei": "Oltenia Vest",
+      "status": "SO01-Comanda Blocata Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241209135820,
+      "autlf": "X",
+      "vdatu": "2025-01-31",
+      "objnr": "VB0001021579000000",
+      "stat": "E0010",
+      "erdat": "2024-12-09",
+      "erzet": "13:55:55",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000713588",
+          "arktx": "Sam.Fl.Soarelui NX92357 Sureli 150mk",
+          "kwmeng": 2,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-04-24",
+      "vbeln": "0001021616",
+      "kunnr": "1000002940",
+      "name1": "DIMIENI SOC AGR",
+      "agent": "DISTRIBUTIE BUDESTI AGENT 04 VALENTIN BOGDAN",
+      "timestamp1": 20250424135633,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "SO02-Comanda Blocata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250424140000,
+      "autlf": "",
+      "vdatu": "2025-04-24",
+      "objnr": "VB0001021616000000",
+      "stat": "E0011",
+      "erdat": "2025-04-24",
+      "erzet": "13:56:33",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 100,
+          "vrkme": "L",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-04-25",
+      "vbeln": "0001021617",
+      "kunnr": "1000002940",
+      "name1": "DIMIENI SOC AGR",
+      "agent": "DISTRIBUTIE BUDESTI AGENT 04 VALENTIN BOGDAN",
+      "timestamp1": 20250425091943,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "SO02-Comanda Blocata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250425092400,
+      "autlf": "",
+      "vdatu": "2025-04-25",
+      "objnr": "VB0001021617000000",
+      "stat": "E0011",
+      "erdat": "2025-04-25",
+      "erzet": "09:19:43",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 10,
+          "vrkme": "L",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-11-27",
+      "vbeln": "0001020048",
+      "kunnr": "1000018309",
+      "name1": "PAREBICA SERV PROD SRL",
+      "agent": "DISTRIBUTIE CENTRU AGENT 01 AURELIAN MIHAIL",
+      "timestamp1": 20241127112406,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "WF04-Aprobata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241127135059,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001020048000000",
+      "stat": "E0007",
+      "erdat": "2024-11-27",
+      "erzet": "11:24:06",
+      "pozitii": [
+        {
+          "posnr": 20,
+          "matnr": "000000000000710301",
+          "arktx": "Samanta Porumb MIKADO 50mk",
+          "kwmeng": 75,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 10,
+          "matnr": "000000000000714394",
+          "arktx": "Samanta Porumb HYPOLITO 0381 INITIO 50mk",
+          "kwmeng": 45,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-09-30",
+      "vbeln": "0001010779",
+      "kunnr": "1000015133",
+      "name1": "MILUCA SRL",
+      "agent": "DISTRIBUTIE MOLDOVA SUD AGENT 02 SORIN MARIUS",
+      "timestamp1": 20240930131802,
+      "vkbur": "MOLS",
+      "vkburBezei": "Moldova Sud",
+      "status": "WF02-Aprobare Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20240930132724,
+      "autlf": "X",
+      "vdatu": "2025-02-27",
+      "objnr": "VB0001010779000000",
+      "stat": "E0005",
+      "erdat": "2024-09-30",
+      "erzet": "13:18:02",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000722023",
+          "arktx": "POLEPOSITION 300 EC, 5 L",
+          "kwmeng": 125,
+          "vrkme": "L",
+          "werks": "P131",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-11-22",
+      "vbeln": "0001019855",
+      "kunnr": "1000030188",
+      "name1": "ONACA PARTENIE PFA",
+      "agent": "DISTRIBUTIE CENTRU AGENT 08 IRINA",
+      "timestamp1": 20241122123104,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "SO02-Comanda Blocata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241122135006,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001019855000000",
+      "stat": "E0011",
+      "erdat": "2024-11-22",
+      "erzet": "12:31:04",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000711130",
+          "arktx": "Samanta Fl.Soarelui SUMIKO 150mk",
+          "kwmeng": 3,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 20,
+          "matnr": "000000000000712177",
+          "arktx": "Samanta Porumb SY CHORINTOS  50mk",
+          "kwmeng": 12,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-11-22",
+      "vbeln": "0001019856",
+      "kunnr": "1000030188",
+      "name1": "ONACA PARTENIE PFA",
+      "agent": "DISTRIBUTIE CENTRU AGENT 08 IRINA",
+      "timestamp1": 20241122123725,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "SO02-Comanda Blocata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241122134805,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001019856000000",
+      "stat": "E0011",
+      "erdat": "2024-11-22",
+      "erzet": "12:37:25",
+      "pozitii": [
+        {
+          "posnr": 20,
+          "matnr": "000000000000713721",
+          "arktx": "SAMANTA PORUMB TORRANO 80MK",
+          "kwmeng": 2,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 10,
+          "matnr": "000000000000713721",
+          "arktx": "SAMANTA PORUMB TORRANO 80MK",
+          "kwmeng": 10,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-11-28",
+      "vbeln": "0001020178",
+      "kunnr": "1000030208",
+      "name1": "GABOS ATILA PFA",
+      "agent": "DISTRIBUTIE CENTRU AGENT 08 IRINA",
+      "timestamp1": 20241128080845,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "SO02-Comanda Blocata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241128095515,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001020178000000",
+      "stat": "E0011",
+      "erdat": "2024-11-28",
+      "erzet": "08:08:45",
+      "pozitii": [
+        {
+          "posnr": 20,
+          "matnr": "000000000000713721",
+          "arktx": "SAMANTA PORUMB TORRANO 80MK",
+          "kwmeng": 7,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 10,
+          "matnr": "000000000000713721",
+          "arktx": "SAMANTA PORUMB TORRANO 80MK",
+          "kwmeng": 30,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-11-28",
+      "vbeln": "0001020236",
+      "kunnr": "1000030208",
+      "name1": "GABOS ATILA PFA",
+      "agent": "DISTRIBUTIE CENTRU AGENT 08 IRINA",
+      "timestamp1": 20241128112538,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "WF04-Aprobata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241203141400,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001020236000000",
+      "stat": "E0007",
+      "erdat": "2024-11-28",
+      "erzet": "11:25:38",
+      "pozitii": [
+        {
+          "posnr": 20,
+          "matnr": "000000000000713721",
+          "arktx": "SAMANTA PORUMB TORRANO 80MK",
+          "kwmeng": 7,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 10,
+          "matnr": "000000000000713721",
+          "arktx": "SAMANTA PORUMB TORRANO 80MK",
+          "kwmeng": 30,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-11-28",
+      "vbeln": "0001020266",
+      "kunnr": "1000005563",
+      "name1": "VIVADUCE SRL",
+      "agent": "DISTRIBUTIE BUDESTI SUD AGENT 06 CRISTIAN",
+      "timestamp1": 20241128124939,
+      "vkbur": "BUDS",
+      "vkburBezei": "Budesti Sud",
+      "status": "WF04-Aprobata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241202085130,
+      "autlf": "X",
+      "vdatu": "2025-02-14",
+      "objnr": "VB0001020266000000",
+      "stat": "E0007",
+      "erdat": "2024-11-28",
+      "erzet": "12:49:39",
+      "pozitii": [
+        {
+          "posnr": 20,
+          "matnr": "000000000000715317",
+          "arktx": "SAMANTA PORUMB SYNOPSIS 80MK",
+          "kwmeng": 5,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 10,
+          "matnr": "000000000000715317",
+          "arktx": "SAMANTA PORUMB SYNOPSIS 80MK",
+          "kwmeng": 20,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-11-29",
+      "vbeln": "0001020402",
+      "kunnr": "1000026750",
+      "name1": "GUSEILA IOAN",
+      "agent": "DISTRIBUTIE CENTRU AGENT 01 AURELIAN MIHAIL",
+      "timestamp1": 20241129132917,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "WF04-Aprobata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241202102327,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001020402000000",
+      "stat": "E0007",
+      "erdat": "2024-11-29",
+      "erzet": "13:29:17",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000714504",
+          "arktx": "Samanta Porumb DKC4109 Acceleron 80",
+          "kwmeng": 6,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-02",
+      "vbeln": "0001020439",
+      "kunnr": "1000026593",
+      "name1": "VIRLAN SORIN-VALENTIN PFA",
+      "agent": "DISTRIBUTIE OLTENIA VEST AGENT 02 IULIAN LAURENTIU",
+      "timestamp1": 20241202081941,
+      "vkbur": "OLTV",
+      "vkburBezei": "Oltenia Vest",
+      "status": "SO02-Comanda Blocata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241202171716,
+      "autlf": "X",
+      "vdatu": "2025-01-15",
+      "objnr": "VB0001020439000000",
+      "stat": "E0011",
+      "erdat": "2024-12-02",
+      "erzet": "08:19:41",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000713710",
+          "arktx": "Samanta Fl.Soarelui FAUSTO EX 150mk",
+          "kwmeng": 5,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 20,
+          "matnr": "000000000000713710",
+          "arktx": "Samanta Fl.Soarelui FAUSTO EX 150mk",
+          "kwmeng": 1,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-02",
+      "vbeln": "0001020440",
+      "kunnr": "1000006706",
+      "name1": "AGRI CONSORTIUM ORAVITA SRL",
+      "agent": "DISTRIBUTIE OLTENIA VEST AGENT 02 IULIAN LAURENTIU",
+      "timestamp1": 20241202082637,
+      "vkbur": "OLTV",
+      "vkburBezei": "Oltenia Vest",
+      "status": "WF04-Aprobata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241203091737,
+      "autlf": "X",
+      "vdatu": "2025-01-15",
+      "objnr": "VB0001020440000000",
+      "stat": "E0007",
+      "erdat": "2024-12-02",
+      "erzet": "08:26:37",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000714909",
+          "arktx": "Samanta Porumb DKC3972 Acceleron 80",
+          "kwmeng": 140,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-04",
+      "vbeln": "0001020954",
+      "kunnr": "1000019696",
+      "name1": "BADAN MARIAN II",
+      "agent": "DISTRIBUTIE DOBROGEA AGENT MICRO ALEXANDRU COSTEL",
+      "timestamp1": 20241204105953,
+      "vkbur": "DOB",
+      "vkburBezei": "Dobrogea",
+      "status": "WF02-Aprobare Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241204114441,
+      "autlf": "X",
+      "vdatu": "2025-02-03",
+      "objnr": "VB0001020954000000",
+      "stat": "E0005",
+      "erdat": "2024-12-04",
+      "erzet": "10:59:53",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000714393",
+          "arktx": "Samanta Porumb ADONISIO 0441 INITIO 50mk",
+          "kwmeng": 12,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-04",
+      "vbeln": "0001021082",
+      "kunnr": "1000030516",
+      "name1": "BUZURIU CONSTANTIN II",
+      "agent": "DISTRIBUTIE OLTENIA VEST AGENT 02 IULIAN LAURENTIU",
+      "timestamp1": 20241204145800,
+      "vkbur": "OLTV",
+      "vkburBezei": "Oltenia Vest",
+      "status": "SO02-Comanda Blocata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241204150311,
+      "autlf": "X",
+      "vdatu": "2025-01-30",
+      "objnr": "VB0001021082000000",
+      "stat": "E0011",
+      "erdat": "2024-12-04",
+      "erzet": "14:58:00",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000713109",
+          "arktx": "Samanta Porumb KASHMIR INITIO 50mk",
+          "kwmeng": 5,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-04",
+      "vbeln": "0001021126",
+      "kunnr": "1000030516",
+      "name1": "BUZURIU CONSTANTIN II",
+      "agent": "DISTRIBUTIE OLTENIA VEST AGENT 02 IULIAN LAURENTIU",
+      "timestamp1": 20241204161725,
+      "vkbur": "OLTV",
+      "vkburBezei": "Oltenia Vest",
+      "status": "WF02-Aprobare Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241204162019,
+      "autlf": "X",
+      "vdatu": "2025-01-30",
+      "objnr": "VB0001021126000000",
+      "stat": "E0005",
+      "erdat": "2024-12-04",
+      "erzet": "16:17:25",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000713109",
+          "arktx": "Samanta Porumb KASHMIR INITIO 50mk",
+          "kwmeng": 5,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-05",
+      "vbeln": "0001021228",
+      "kunnr": "1000030188",
+      "name1": "ONACA PARTENIE PFA",
+      "agent": "DISTRIBUTIE CENTRU AGENT 08 IRINA",
+      "timestamp1": 20241205081938,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "WF04-Aprobata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241205113354,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001021228000000",
+      "stat": "E0007",
+      "erdat": "2024-12-05",
+      "erzet": "08:19:38",
+      "pozitii": [
+        {
+          "posnr": 20,
+          "matnr": "000000000000713721",
+          "arktx": "SAMANTA PORUMB TORRANO 80MK",
+          "kwmeng": 2,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 10,
+          "matnr": "000000000000713721",
+          "arktx": "SAMANTA PORUMB TORRANO 80MK",
+          "kwmeng": 10,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-05",
+      "vbeln": "0001021229",
+      "kunnr": "1000030188",
+      "name1": "ONACA PARTENIE PFA",
+      "agent": "DISTRIBUTIE CENTRU AGENT 08 IRINA",
+      "timestamp1": 20241205082520,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "WF04-Aprobata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241205113813,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001021229000000",
+      "stat": "E0007",
+      "erdat": "2024-12-05",
+      "erzet": "08:25:20",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000711130",
+          "arktx": "Samanta Fl.Soarelui SUMIKO 150mk",
+          "kwmeng": 3,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 20,
+          "matnr": "000000000000712177",
+          "arktx": "Samanta Porumb SY CHORINTOS  50mk",
+          "kwmeng": 12,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-06",
+      "vbeln": "0001021407",
+      "kunnr": "1000027930",
+      "name1": "MANDRUSCA DUMITRU PFA",
+      "agent": "DISTRIBUTIE CENTRU AGENT 08 IRINA",
+      "timestamp1": 20241206103258,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "WF02-Aprobare Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241206163258,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001021407000000",
+      "stat": "E0005",
+      "erdat": "2024-12-06",
+      "erzet": "10:32:58",
+      "pozitii": [
+        {
+          "posnr": 20,
+          "matnr": "000000000000714393",
+          "arktx": "Samanta Porumb ADONISIO 0441 INITIO 50mk",
+          "kwmeng": 20,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 30,
+          "matnr": "000000000000713109",
+          "arktx": "Samanta Porumb KASHMIR INITIO 50mk",
+          "kwmeng": 20,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 10,
+          "matnr": "000000000000714586",
+          "arktx": "Samanta Fl.Soarelui SUVEX SU 150mk",
+          "kwmeng": 3,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-06",
+      "vbeln": "0001021413",
+      "kunnr": "1000030854",
+      "name1": "MARTOCA TRANS SRL",
+      "agent": "DISTRIBUTIE CENTRU AGENT 08 IRINA",
+      "timestamp1": 20241206104826,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "WF02-Aprobare Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241206163413,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001021413000000",
+      "stat": "E0005",
+      "erdat": "2024-12-06",
+      "erzet": "10:48:26",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000714586",
+          "arktx": "Samanta Fl.Soarelui SUVEX SU 150mk",
+          "kwmeng": 10,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 20,
+          "matnr": "000000000000713109",
+          "arktx": "Samanta Porumb KASHMIR INITIO 50mk",
+          "kwmeng": 20,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        },
+        {
+          "posnr": 30,
+          "matnr": "000000000000714393",
+          "arktx": "Samanta Porumb ADONISIO 0441 INITIO 50mk",
+          "kwmeng": 20,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-06",
+      "vbeln": "0001021416",
+      "kunnr": "1000030208",
+      "name1": "GABOS ATILA PFA",
+      "agent": "DISTRIBUTIE CENTRU AGENT 08 IRINA",
+      "timestamp1": 20241206110719,
+      "vkbur": "CEN",
+      "vkburBezei": "Centru",
+      "status": "SO02-Comanda Blocata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241206163424,
+      "autlf": "X",
+      "vdatu": "2025-02-28",
+      "objnr": "VB0001021416000000",
+      "stat": "E0011",
+      "erdat": "2024-12-06",
+      "erzet": "11:07:19",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000711130",
+          "arktx": "Samanta Fl.Soarelui SUMIKO 150mk",
+          "kwmeng": 1,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-06",
+      "vbeln": "0001021423",
+      "kunnr": "1000020642",
+      "name1": "ALERT EL CAR SRL",
+      "agent": "DISTRIBUTIE DOBROGEA AGENT MICRO ALEXANDRU COSTEL",
+      "timestamp1": 20241206115434,
+      "vkbur": "DOB",
+      "vkburBezei": "Dobrogea",
+      "status": "WF02-Aprobare Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241206163137,
+      "autlf": "X",
+      "vdatu": "2025-02-03",
+      "objnr": "VB0001021423000000",
+      "stat": "E0005",
+      "erdat": "2024-12-06",
+      "erzet": "11:54:34",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000714427",
+          "arktx": "Samanta Fl.Soarelui MICHIGAN CLP 150mk",
+          "kwmeng": 24,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2024-12-06",
+      "vbeln": "0001021426",
+      "kunnr": "1000014821",
+      "name1": "MAREMVIC AGRO SRL",
+      "agent": "DISTRIBUTIE DOBROGEA AGENT MICRO ALEXANDRU COSTEL",
+      "timestamp1": 20241206120253,
+      "vkbur": "DOB",
+      "vkburBezei": "Dobrogea",
+      "status": "WF02-Aprobare Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20241206163121,
+      "autlf": "X",
+      "vdatu": "2025-02-03",
+      "objnr": "VB0001021426000000",
+      "stat": "E0005",
+      "erdat": "2024-12-06",
+      "erzet": "12:02:53",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000712621",
+          "arktx": "Sam.Fl.Soarelui ODESSA-NX63278 CLP 150mk",
+          "kwmeng": 8,
+          "vrkme": "DZ",
+          "werks": "P262",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-06-16",
+      "vbeln": "0001021674",
+      "kunnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "agent": "CLUB DOBROGEA CRISTIAN IULIAN",
+      "timestamp1": 20250616124031,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "BO01-Initial Status",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250616124032,
+      "autlf": "X",
+      "vdatu": "2025-06-16",
+      "objnr": "VB0001021674000000",
+      "stat": "E0001",
+      "erdat": "2025-06-16",
+      "erzet": "12:40:31",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 1500,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-05-05",
+      "vbeln": "0001021625",
+      "kunnr": "1000012221",
+      "name1": "AGROZOOTEHNICA PIETROIU SA",
+      "agent": "DISTRIBUTIE BUZAU AGENT 02",
+      "timestamp1": 20250505160643,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "SO02-Comanda Blocata Credit",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250505161009,
+      "autlf": "X",
+      "vdatu": "2025-05-05",
+      "objnr": "VB0001021625000000",
+      "stat": "E0011",
+      "erdat": "2025-05-05",
+      "erzet": "16:06:43",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 1000,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-05-06",
+      "vbeln": "0001021633",
+      "kunnr": "1000000227",
+      "name1": "DJ & B AGROPRODUCT SRL",
+      "agent": "DISTRIBUTIE BUZAU AGENT 02",
+      "timestamp1": 20250506135029,
+      "vkbur": "BAN",
+      "vkburBezei": "Banat",
+      "status": "BO03-Comanda validata BO",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250506135113,
+      "autlf": "X",
+      "vdatu": "2025-05-06",
+      "objnr": "VB0001021633000000",
+      "stat": "E0003",
+      "erdat": "2025-05-06",
+      "erzet": "13:50:29",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 5,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-05-06",
+      "vbeln": "0001021634",
+      "kunnr": "1000000227",
+      "name1": "DJ & B AGROPRODUCT SRL",
+      "agent": "DISTRIBUTIE BUZAU AGENT 02",
+      "timestamp1": 20250506135242,
+      "vkbur": "BAN",
+      "vkburBezei": "Banat",
+      "status": "BO03-Comanda validata BO",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250506135320,
+      "autlf": "X",
+      "vdatu": "2025-05-06",
+      "objnr": "VB0001021634000000",
+      "stat": "E0003",
+      "erdat": "2025-05-06",
+      "erzet": "13:52:42",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 4,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-05-09",
+      "vbeln": "0001021646",
+      "kunnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "agent": "CLUB DOBROGEA CRISTIAN IULIAN",
+      "timestamp1": 20250509101026,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "BO03-Comanda validata BO",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250509101129,
+      "autlf": "X",
+      "vdatu": "2025-05-09",
+      "objnr": "VB0001021646000000",
+      "stat": "E0003",
+      "erdat": "2025-05-09",
+      "erzet": "10:10:26",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 5,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-06-11",
+      "vbeln": "0001021672",
+      "kunnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "agent": "DISTRIBUTIE BUDESTI AGENT 04 VALENTIN BOGDAN",
+      "timestamp1": 20250611090912,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "WF02-Aprobare Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250611091226,
+      "autlf": "",
+      "vdatu": "2025-06-11",
+      "objnr": "VB0001021672000000",
+      "stat": "E0005",
+      "erdat": "2025-06-11",
+      "erzet": "09:09:12",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 1000,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-05-09",
+      "vbeln": "0001021651",
+      "kunnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "agent": "CLUB DOBROGEA CRISTIAN IULIAN",
+      "timestamp1": 20250509133322,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "SO01-Comanda Blocata Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250509133427,
+      "autlf": "X",
+      "vdatu": "2025-05-09",
+      "objnr": "VB0001021651000000",
+      "stat": "E0010",
+      "erdat": "2025-05-09",
+      "erzet": "13:33:22",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 7,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-05-06",
+      "vbeln": "0001021631",
+      "kunnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "agent": "CLUB DOBROGEA CRISTIAN IULIAN",
+      "timestamp1": 20250506093936,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "SO01-Comanda Blocata Comercial",
+      "motivblocaj": "Motiv 1",
+      "responsabil": "Responsabil 1",
+      "timestamp2": 20250506094020,
+      "autlf": "X",
+      "vdatu": "2025-05-06",
+      "objnr": "VB0001021631000000",
+      "stat": "E0010",
+      "erdat": "2025-05-06",
+      "erzet": "09:39:36",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 3,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-05-09",
+      "vbeln": "0001021652",
+      "kunnr": "1000000227",
+      "name1": "DJ & B AGROPRODUCT SRL",
+      "agent": "DISTRIBUTIE BUZAU AGENT 02",
+      "timestamp1": 20250509133634,
+      "vkbur": "BAN",
+      "vkburBezei": "Banat",
+      "status": "SO01-Comanda Blocata Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250509133746,
+      "autlf": "X",
+      "vdatu": "2025-05-09",
+      "objnr": "VB0001021652000000",
+      "stat": "E0010",
+      "erdat": "2025-05-09",
+      "erzet": "13:36:34",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 4,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-05-06",
+      "vbeln": "0001021632",
+      "kunnr": "1000000227",
+      "name1": "DJ & B AGROPRODUCT SRL",
+      "agent": "DISTRIBUTIE BUZAU AGENT 02",
+      "timestamp1": 20250506094135,
+      "vkbur": "BAN",
+      "vkburBezei": "Banat",
+      "status": "SO01-Comanda Blocata Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250506094217,
+      "autlf": "X",
+      "vdatu": "2025-05-06",
+      "objnr": "VB0001021632000000",
+      "stat": "E0010",
+      "erdat": "2025-05-06",
+      "erzet": "09:41:35",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 3,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-06-04",
+      "vbeln": "0001021670",
+      "kunnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "agent": "CLUB DOBROGEA CRISTIAN IULIAN",
+      "timestamp1": 20250604141004,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "SO01-Comanda Blocata Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250604141107,
+      "autlf": "X",
+      "vdatu": "2025-06-04",
+      "objnr": "VB0001021670000000",
+      "stat": "E0010",
+      "erdat": "2025-06-04",
+      "erzet": "14:10:04",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 10,
+          "vrkme": "L",
+          "werks": "P114",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-06-04",
+      "vbeln": "0001021671",
+      "kunnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "agent": "CLUB DOBROGEA CRISTIAN IULIAN",
+      "timestamp1": 20250604141156,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "SO01-Comanda Blocata Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250604141447,
+      "autlf": "X",
+      "vdatu": "2025-06-01",
+      "objnr": "VB0001021671000000",
+      "stat": "E0010",
+      "erdat": "2025-06-04",
+      "erzet": "14:11:56",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 4,
+          "vrkme": "L",
+          "werks": "P114",
+          "ulstock": 0
+        }
+      ]
+    },
+    {
+      "auart": "ZSSP",
+      "audat": "2025-05-05",
+      "vbeln": "0001021622",
+      "kunnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "agent": "CLUB DOBROGEA CRISTIAN IULIAN",
+      "timestamp1": 20250505145800,
+      "vkbur": "BUDN",
+      "vkburBezei": "Budesti Nord",
+      "status": "SO01-Comanda Blocata Comercial",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 20250505145841,
+      "autlf": "X",
+      "vdatu": "2025-05-05",
+      "objnr": "VB0001021622000000",
+      "stat": "E0010",
+      "erdat": "2025-05-05",
+      "erzet": "14:58:00",
+      "pozitii": [
+        {
+          "posnr": 10,
+          "matnr": "000000000000720030",
+          "arktx": "ADENGO 465 SC, 1L",
+          "kwmeng": 10,
+          "vrkme": "L",
+          "werks": "P253",
+          "ulstock": 0
+        }
+      ]
+    }
+  ],
+  "achizitii": [
+    {
+      "ebeln": "4500339985",
+      "lifnr": "1000000985",
+      "name1": "ADAMA AGRICULTURAL SOLUTIONS S",
+      "timestamp1": 0,
+      "aedat": "2025-02-18",
+      "bedat": "2025-02-18",
+      "eeind": "20250221",
+      "status": "",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 0,
+      "pozitii": [
+        {
+          "ebelp": 20,
+          "matnr": "000000000000721427",
+          "txz01": "ZETROLA, 5L",
+          "menge": 300,
+          "bprme": "L",
+          "werks": "P262"
+        },
+        {
+          "ebelp": 10,
+          "matnr": "000000000000721420",
+          "txz01": "AMINO 600 SL, 1L",
+          "menge": 100,
+          "bprme": "L",
+          "werks": "P262"
+        },
+        {
+          "ebelp": 30,
+          "matnr": "000000000000721416",
+          "txz01": "PK. 10HA-PYXIDES 5KG+ADIGOR 10L",
+          "menge": 50,
+          "bprme": "PAC",
+          "werks": "P262"
+        }
+      ]
+    },
+    {
+      "ebeln": "4500339986",
+      "lifnr": "1000000985",
+      "name1": "ADAMA AGRICULTURAL SOLUTIONS S",
+      "timestamp1": 0,
+      "aedat": "2025-02-25",
+      "bedat": "2025-02-25",
+      "eeind": "20250228",
+      "status": "",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 0,
+      "pozitii": [
+        {
+          "ebelp": 20,
+          "matnr": "000000000000721427",
+          "txz01": "ZETROLA, 5L",
+          "menge": 300,
+          "bprme": "L",
+          "werks": "P262"
+        },
+        {
+          "ebelp": 10,
+          "matnr": "000000000000721420",
+          "txz01": "AMINO 600 SL, 1L",
+          "menge": 100,
+          "bprme": "L",
+          "werks": "P262"
+        },
+        {
+          "ebelp": 30,
+          "matnr": "000000000000721416",
+          "txz01": "PK. 10HA-PYXIDES 5KG+ADIGOR 10L",
+          "menge": 100,
+          "bprme": "PAC",
+          "werks": "P262"
+        }
+      ]
+    },
+    {
+      "ebeln": "4500339993",
+      "lifnr": "1000010237",
+      "name1": "NUFARM ROMANIA SRL",
+      "timestamp1": 0,
+      "aedat": "2025-04-28",
+      "bedat": "2025-04-28",
+      "eeind": "20250502",
+      "status": "",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 0,
+      "pozitii": [
+        {
+          "ebelp": 10,
+          "matnr": "000000000000721409",
+          "txz01": "STABILAN 750 SL, 20L",
+          "menge": 100,
+          "bprme": "L",
+          "werks": "P262"
+        },
+        {
+          "ebelp": 20,
+          "matnr": "000000000000721409",
+          "txz01": "STABILAN 750 SL, 20L",
+          "menge": 100,
+          "bprme": "L",
+          "werks": "P262"
+        }
+      ]
+    },
+    {
+      "ebeln": "4600007221",
+      "lifnr": "1000000985",
+      "name1": "ADAMA AGRICULTURAL SOLUTIONS S",
+      "timestamp1": 0,
+      "aedat": "2025-04-28",
+      "bedat": "2025-04-28",
+      "eeind": "00000000",
+      "status": "",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 0,
+      "pozitii": [
+        {
+          "ebelp": 10,
+          "matnr": "000000000000720967",
+          "txz01": "FORNET EXTRA 6 OD, 5L",
+          "menge": 0,
+          "bprme": "L",
+          "werks": ""
+        }
+      ]
+    },
+    {
+      "ebeln": "4500339994",
+      "lifnr": "1000000985",
+      "name1": "ADAMA AGRICULTURAL SOLUTIONS S",
+      "timestamp1": 0,
+      "aedat": "2025-04-28",
+      "bedat": "2025-04-28",
+      "eeind": "20250502",
+      "status": "",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 0,
+      "pozitii": [
+        {
+          "ebelp": 10,
+          "matnr": "000000000000720967",
+          "txz01": "FORNET EXTRA 6 OD, 5L",
+          "menge": 10000,
+          "bprme": "L",
+          "werks": "P253"
+        }
+      ]
+    },
+    {
+      "ebeln": "4500339995",
+      "lifnr": "1000000985",
+      "name1": "ADAMA AGRICULTURAL SOLUTIONS S",
+      "timestamp1": 0,
+      "aedat": "2025-04-28",
+      "bedat": "2025-04-28",
+      "eeind": "20250502",
+      "status": "",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 0,
+      "pozitii": [
+        {
+          "ebelp": 10,
+          "matnr": "000000000000720967",
+          "txz01": "FORNET EXTRA 6 OD, 5L",
+          "menge": 10000,
+          "bprme": "L",
+          "werks": "P253"
+        }
+      ]
+    },
+    {
+      "ebeln": "4600007222",
+      "lifnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "timestamp1": 0,
+      "aedat": "2025-04-28",
+      "bedat": "2025-04-28",
+      "eeind": "00000000",
+      "status": "",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 0,
+      "pozitii": [
+        {
+          "ebelp": 10,
+          "matnr": "000000000000720030",
+          "txz01": "ADENGO 465 SC, 1L",
+          "menge": 0,
+          "bprme": "L",
+          "werks": "P253"
+        }
+      ]
+    },
+    {
+      "ebeln": "4500339996",
+      "lifnr": "1000002764",
+      "name1": "AGROSERV MARIUTA SA",
+      "timestamp1": 0,
+      "aedat": "2025-04-28",
+      "bedat": "2025-04-28",
+      "eeind": "20250502",
+      "status": "",
+      "motivblocaj": "",
+      "responsabil": "",
+      "timestamp2": 0,
+      "pozitii": [
+        {
+          "ebelp": 10,
+          "matnr": "000000000000720030",
+          "txz01": "ADENGO 465 SC, 1L",
+          "menge": 10000,
+          "bprme": "L",
+          "werks": "P253"
+        }
+      ]
+    }
+  ]
+}

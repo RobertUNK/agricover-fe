@@ -1,10 +1,9 @@
-import { Component, signal, effect, inject, OnInit } from '@angular/core';
+import { Component, signal, inject, OnInit } from '@angular/core';
 import { TableData } from '../../interfaces/table-data.interface';
 import { TableComponent } from '../table/table.component';
 import { HeaderComponent } from '../header/header.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { DataService } from '../../services/data.service';
-import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-homepage',
@@ -26,18 +25,9 @@ export class HomepageComponent implements OnInit {
   currentSortKey: keyof TableData = 'totalBlockage';
   currentSortDirection: 'asc' | 'desc' = 'desc';
 
-  constructor(private authService: AuthService) {}
+  constructor() {}
 
   ngOnInit() {
-    // this.authService.ensureAuthenticated().then(() => {
-    //   const token = this.authService.getToken();
-
-    //   if (!token) {
-    //     console.error('Token inexistent după login. Polling anulat.');
-    //     return;
-    //   }
-
-    // });
     this.dataService.pollOrders().subscribe(({ sales, purchases }) => {
       this.salesData.set(this.sortData(sales));
       this.purchasesData.set(this.sortData(purchases));

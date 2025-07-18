@@ -1,5 +1,6 @@
 :host {
   padding-bottom: 30px;
+  border-radius: 32px;
 }
 .table-container {
   padding-bottom: 60px;
@@ -19,18 +20,18 @@
     z-index: 1;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     border-radius: 24px;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
     .row-wrapper {
       .row {
         .column {
           font-weight: 700;
-          font-size: 1.6rem;
+          font-size: 2rem;
           line-height: 100%;
           letter-spacing: 0;
           color: #000000;
           &:first-child {
             color: #131e29;
-            font-size: 2.3rem;
+            font-size: 2.7rem;
           }
           &.total {
             display: flex;
@@ -68,7 +69,7 @@
       .row {
         .column {
           font-weight: 400;
-          font-size: 1.6rem;
+          font-size: 2rem;
           line-height: 100%;
           letter-spacing: 0;
           color: #1e1103;
@@ -76,10 +77,11 @@
             width: 100%;
             height: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             cursor: pointer;
             box-sizing: border-box;
+            padding: 0;
             .background {
               width: 87px;
               height: 69px;
@@ -104,7 +106,7 @@
               justify-content: center;
               padding: 4px 8px;
               border-radius: 8px;
-              font-size: 1.4rem;
+              font-size: 1.8rem;
               line-height: 1;
               color: black;
               white-space: nowrap;
@@ -147,14 +149,12 @@
   .row {
     display: grid;
     grid-template-columns:
-      1fr
-      1fr
+      0.3fr
       1fr
       1fr
       1fr
       1fr
       2fr
-      1fr
       1fr
       1fr
       1fr
@@ -175,13 +175,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: left;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     line-height: 1;
-    &:hover {
-      text-overflow: clip;
-      white-space: normal;
-      word-break: break-all;
-    }
+    // &:hover {
+    //   text-overflow: clip;
+    //   white-space: normal;
+    //   word-break: break-all;
+    // }
   }
 
   .row .column:first-child {
@@ -196,9 +196,9 @@
       .row-wrapper {
         .row {
           .column {
-            font-size: 0.8rem;
+            font-size: 1.2rem;
             &:first-child {
-              font-size: 1.2rem;
+              font-size: 1.6rem;
             }
             &.total {
               img {
@@ -216,7 +216,7 @@
       .row-wrapper {
         .row {
           .column {
-            font-size: 0.8rem;
+            font-size: 1.2rem;
             &:first-child {
               .background {
                 width: 43px;
@@ -230,7 +230,7 @@
             }
             &.status {
               span {
-                font-size: 0.7rem;
+                font-size: 1.1rem;
               }
             }
           }
@@ -243,7 +243,7 @@
     }
 
     .column {
-      font-size: 0.5rem;
+      font-size: 0.9rem;
     }
   }
 }

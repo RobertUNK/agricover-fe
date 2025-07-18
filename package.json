@@ -1,14 +1,14 @@
 {
   "name": "agricover-dashboard",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:dev": "ng build --configuration=development",
+    "build:prod": "ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "start:prod": "ng build --configuration=production && http-server dist/agricover-dashboard/browser",
-    "start:dev": "ng build --configuration=development && http-server dist/agricover-dashboard/browser"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {

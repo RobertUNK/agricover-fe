@@ -9,7 +9,7 @@ export class AuthService {
 
   private readonly username = 'testuser';
   private readonly password = 'SOz-^!C;pg8Uc?sWI~D^leC62`Ck+iS£';
-  private readonly LOGIN_URL = `${environment.domainUrl}/login?sap-client=220`;
+  private readonly LOGIN_URL = `${environment.domainUrl}/login`;
 
   constructor(private http: HttpClient) {}
 
@@ -19,6 +19,10 @@ export class AuthService {
 
   saveToken(token: string) {
     localStorage.setItem(this.TOKEN_KEY, token);
+  }
+
+  clearToken() {
+    localStorage.removeItem(this.TOKEN_KEY);
   }
 
   async ensureAuthenticated(): Promise<void> {

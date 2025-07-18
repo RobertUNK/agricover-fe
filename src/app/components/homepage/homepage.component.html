@@ -1,11 +1,13 @@
 <div class="homepage-container">
   <app-header (onSelectSortingOption)="onSortKey($event)"></app-header>
   <div class="tables-wrapper">
+    <div class="title">Vanzari</div>
     <app-table
       [title]="salesTitle"
       [data]="salesData()"
       (onRowClicked)="onTableRowClicked($event)"
     ></app-table>
+    <div class="title">Achizitii</div>
     <app-table
       [title]="purchasesTitle"
       [data]="purchasesData()"

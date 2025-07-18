@@ -14,7 +14,7 @@ export interface TableData {
   agent: string;
   data: number;
   zone: string;
-  status: string;
+  status?: string;
   reason: string;
   responsive: string;
   lockDuration: number;

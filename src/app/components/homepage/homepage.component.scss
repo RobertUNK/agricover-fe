@@ -9,10 +9,11 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-image: url("/assets/images/homepage-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  // background-image: url("/assets/images/homepage-background.png");
+  background-color: #4E5B31;
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
 }
 
 .tables-wrapper {
@@ -23,6 +24,11 @@
   padding: 30px 60px;
   box-sizing: border-box;
   overflow: hidden;
+  .title {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+  }
 }
 
 app-table {
