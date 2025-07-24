@@ -31,7 +31,7 @@ export class DataService {
   pollOrders() {
     return defer(() => this.loginWithRetry()).pipe(
       switchMap(() =>
-        timer(0, 5000).pipe(
+        timer(0, 30000).pipe(
           switchMap(() =>
             this.http.get<OrdersResponse>(this.DASH_URL).pipe(
               catchError((err) => {
