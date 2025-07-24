@@ -66,13 +66,13 @@ export class DataService {
       return from(this.authService.ensureAuthenticated()).pipe(
         catchError((err) => {
           console.warn('Login eșuat. Se reîncearcă în 5 secunde...', err);
-          return timer(5000).pipe(switchMap(() => this.loginWithRetry()));
+          return timer(30000).pipe(switchMap(() => this.loginWithRetry()));
         }),
         switchMap(() => {
           if (this.authService.getToken()) {
             return of(true);
           }
-          return timer(5000).pipe(switchMap(() => this.loginWithRetry()));
+          return timer(30000).pipe(switchMap(() => this.loginWithRetry()));
         })
       );
     });
