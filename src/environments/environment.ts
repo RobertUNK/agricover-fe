@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  domainUrl: '/api',
+  domainUrl: 'https://agricover-dev-dashboard.loca.lt/api',
 };
