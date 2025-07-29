@@ -18,8 +18,8 @@ export class HomepageComponent implements OnInit {
   salesData = signal<TableData[]>([]);
   purchasesData = signal<TableData[]>([]);
 
-  salesTitle = 'Vanzari';
-  purchasesTitle = 'Achizitii';
+  salesTitle = 'Vânzări';
+  purchasesTitle = 'Achiziții';
   selectedTableRow: TableData | null = null;
 
   currentSortKey: keyof TableData = 'totalBlockage';

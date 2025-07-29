@@ -13,28 +13,29 @@ export class HeaderComponent {
   isDropdownOpen = false;
   selectedOption = 'Total blocaj';
   dropdownOptions: string[] = [
-    'Vanzari',
-    'Nr Comanda',
+    'Vânzări',
+    'Nr Comandă',
     'Client',
     'Agent',
     'Data',
     'Motiv',
     'Responsabil',
-    'Durata Blocare',
-    'Livrare partiala',
+    'Durată Blocare',
+    'Livrare parțială',
     'Total blocaj',
   ];
+
   sortKeyMap: Record<string, keyof TableData> = {
-    'Nr Comanda': 'orderNumber',
+    'Nr Comandă': 'orderNumber',
     Client: 'client',
     Agent: 'agent',
     Data: 'data',
-    Zona: 'zone',
+    Zonă: 'zone',
     Status: 'status',
     Motiv: 'reason',
     Responsabil: 'responsive',
-    'Durata blocare': 'lockDuration',
-    'Livrare partiala': 'partialDelivery',
+    'Durată blocare': 'lockDuration',
+    'Livrare parțială': 'partialDelivery',
     'Total blocaj': 'totalBlockage',
   };
 

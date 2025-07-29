@@ -70,7 +70,7 @@ export class SidebarComponent {
 
     if (minutes < 1440) {
       const hours = Math.floor(minutes / 60);
-      return `${hours} ${hours === 1 ? 'ora' : 'ore'}`;
+      return `${hours} ${hours === 1 ? 'oră' : 'ore'}`;
     }
 
     const days = Math.floor(minutes / 1440);

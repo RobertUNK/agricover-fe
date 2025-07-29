@@ -5,7 +5,7 @@
     </div>
     <div class="sidebar-content__header">
       <div class="left-side">
-        <div class="title">Comanda Livrare</div>
+        <div class="title">Comandă Livrare</div>
         <div class="client">{{ tableRowData?.client }}</div>
         <div class="order-number">{{ tableRowData?.orderNumber }}</div>
       </div>
@@ -22,13 +22,10 @@
           <div class="card__label">Motiv</div>
           <div class="card__value">{{ tableRowData?.reason }}</div>
         </div>
-        <div
-          class="card"
-          [ngClass]="{
+        <div class="card" [ngClass]="{
             red: formatDuration(tableRowData?.totalBlockage) !== '-'
-          }"
-        >
-          <div class="card__label">Durata blocare</div>
+          }">
+          <div class="card__label">Durată blocare</div>
           <div class="card__value">
             {{ formatDuration(tableRowData?.totalBlockage) }}
           </div>
@@ -38,7 +35,7 @@
           <div class="card__value">{{ formatDate(tableRowData?.data) }}</div>
         </div>
         <div class="card">
-          <div class="card__label">Zona</div>
+          <div class="card__label">Zonă</div>
           <div class="card__value">{{ tableRowData?.zone }}</div>
         </div>
         <div class="card">
@@ -46,7 +43,7 @@
           <div class="card__value">{{ tableRowData?.responsive }}</div>
         </div>
         <div class="card">
-          <div class="card__label">Livrare partiala</div>
+          <div class="card__label">Livrare parțială</div>
           <div class="card__value">{{ tableRowData?.partialDelivery }}</div>
         </div>
       </div>
@@ -55,12 +52,12 @@
       <div class="header">
         <div class="row-wrapper">
           <div class="row">
-            <div class="column">Nr pozitie</div>
-            <div class="column">Cod Material</div>
+            <div class="column">Nr poziție</div>
+            <div class="column">Cod material</div>
             <div class="column">Denumire material</div>
             <div class="column">Cantitate</div>
-            <div class="column">U.M</div>
-            <div class="column">Unitate logistica</div>
+            <div class="column">U.M.</div>
+            <div class="column">Unitate logistică</div>
             <div class="column">Stoc</div>
           </div>
         </div>
