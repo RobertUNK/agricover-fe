@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy-angular:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Angular app (prod)
         run: npm run build:prod
@@ -29,10 +29,10 @@ jobs:
         run: ls -R dist
 
       - name: Deploy to Azure Static Web Apps
-        uses: Azure/static-web-apps-deploy@v1.0.0  # <- versiune fixă
+        uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          app_location: "/" 
+          app_location: "/"
           output_location: "dist/agricover-dashboard/browser"
           skip_app_build: true
           api_location: ""
