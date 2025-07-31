@@ -26,13 +26,13 @@ jobs:
         run: npm run build:prod
 
       - name: Verify build output
-        run: ls -R dist # Debugging step to confirm output location
+        run: ls -R dist
 
-      - name: Deploy to Azure Static Web App
+      - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           app_location: "/" 
           output_location: "dist/agricover-dashboard/browser"
-          skip_app_build: true # Crucial for Angular apps
-          api_location: "" # Explicitly disable API
+          skip_app_build: true
+          api_location: ""  # sau poți omite complet dacă nu ai backend
