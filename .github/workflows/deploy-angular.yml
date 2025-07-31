@@ -35,5 +35,5 @@ jobs:
           app_location: "/"
           output_location: \"./\"
           skip_app_build: true
-          api_location: ""
-          deployment_action: 'upload'
+          skip_api_build: true
+          deployment_environment: "production"
