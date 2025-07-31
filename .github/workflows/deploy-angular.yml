@@ -36,3 +36,4 @@ jobs:
           output_location: "dist/agricover-dashboard/browser"
           skip_app_build: true
           api_location: ""
+          deployment_action: 'upload'
