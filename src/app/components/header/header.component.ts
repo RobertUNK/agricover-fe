@@ -34,7 +34,7 @@ export class HeaderComponent {
     Status: 'status',
     Motiv: 'reason',
     Responsabil: 'responsive',
-    'Durată blocare': 'lockDuration',
+    'Durată Blocare': 'lockDuration',
     'Livrare parțială': 'partialDelivery',
     'Total blocaj': 'totalBlockage',
   };

@@ -25,7 +25,7 @@ export class HomepageComponent implements OnInit {
   currentSortKey: keyof TableData = 'totalBlockage';
   currentSortDirection: 'asc' | 'desc' = 'desc';
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     this.dataService.pollOrders().subscribe(({ sales, purchases }) => {
@@ -52,12 +52,15 @@ export class HomepageComponent implements OnInit {
 
   onSortKey(key: string) {
     const typedKey = key as keyof TableData;
-    const direction =
-      this.currentSortKey === typedKey && this.currentSortDirection === 'desc'
-        ? 'asc'
-        : 'desc';
-
-    this.onSort(typedKey, direction);
+    if (typedKey !== 'lockDuration' && typedKey !== 'totalBlockage') {
+      const direction =
+        this.currentSortKey === typedKey && this.currentSortDirection === 'desc'
+          ? 'asc'
+          : 'desc';
+      this.onSort(typedKey, direction);
+    } else {
+      this.onSort(typedKey, 'desc');
+    }
   }
 
   private sortData(data: TableData[]): TableData[] {
