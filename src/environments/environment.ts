@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  domainUrl: 'http://localhost:3000',
+  domainUrl: 'http://docker-csb-vm.agricover.local:5610/api',
 };
