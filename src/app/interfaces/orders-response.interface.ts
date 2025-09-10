@@ -49,6 +49,9 @@ export interface Achizitie {
   responsabil: string;
   timestamp2: number;
   pozitii: PozitieAchizitie[];
+  ernam: string;
+  spart_vtext: string;
+  autlf: string;
 }
 
 export interface PozitieAchizitie {
@@ -58,4 +61,5 @@ export interface PozitieAchizitie {
   menge: number;
   bprme: string;
   werks: string;
+  bprme_rec: number;
 }

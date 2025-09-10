@@ -4,7 +4,9 @@
       <div class="row">
         <div class="column"></div>
         <div class="column" title="Nr Comandă">Nr Comandă</div>
-        <div class="column" title="Client">Client</div>
+        <div class="column" title="Client">
+          {{ type === TableType.SALES ? "Client" : "Furnizor" }}
+        </div>
         <div class="column" title="Agent">Agent</div>
         <div class="column" title="Data">Data</div>
         <!-- <div class="column" title="Zona">Zonă</div> -->
@@ -24,11 +26,15 @@
       @for (item of data; track item.orderNumber) {
       <div class="row">
         <div class="column">
-          <div class="background" (click)="openRowDetails(item)">
+          <div class="background" (click)="openRowDetails(item, type)">
             <img src="/assets/images/details-icon.png" />
           </div>
         </div>
-        <div class="column" pTooltip="Enter your username" tooltipPosition="right">
+        <div
+          class="column"
+          pTooltip="Enter your username"
+          tooltipPosition="right"
+        >
           {{ displayValue(item.orderNumber) }}
         </div>
         <div class="column" [title]="displayValue(item.client)">
@@ -61,9 +67,13 @@
         <div class="column" [title]="displayValue(item.partialDelivery)">
           {{ displayValue(item.partialDelivery) }}
         </div>
-        <div class="column total" [ngClass]="{
+        <div
+          class="column total"
+          [ngClass]="{
             'has-value': formatDuration(item.totalBlockage) !== '-'
-          }" [title]="formatDuration(item.totalBlockage)">
+          }"
+          [title]="formatDuration(item.totalBlockage)"
+        >
           {{ formatDuration(item.totalBlockage) }}
         </div>
       </div>

@@ -108,14 +108,14 @@ export class DataService {
     const purchases: TableData[] = response.achizitii.map((a: Achizitie) => ({
       orderNumber: a.ebeln,
       client: a.name1,
-      agent: '',
+      agent: a.ernam,
       data: a.timestamp1,
-      zone: '',
+      zone: a.spart_vtext,
       status: a.status,
       reason: a.motivblocaj,
       responsive: a.responsabil,
       lockDuration: a.timestamp2,
-      partialDelivery: '',
+      partialDelivery: a.autlf,
       totalBlockage: a.timestamp2,
       orderDetails: (a.pozitii ?? []).map((p: PozitieAchizitie) => ({
         positionNumber: +p.ebelp,
@@ -124,7 +124,7 @@ export class DataService {
         quantity: p.menge,
         um: p.bprme,
         logisticUnity: p.werks,
-        stock: 0,
+        stock: p.bprme_rec,
       })),
     }));
 

@@ -4,9 +4,12 @@ import {
   HostBinding,
   Input,
   Output,
+  signal,
+  Signal,
 } from '@angular/core';
 import { TableData } from '../../interfaces/table-data.interface';
 import { NgClass, NgIf } from '@angular/common';
+import { TableType } from '../../interfaces/table-type.enum';
 
 @Component({
   selector: 'app-sidebar',
@@ -22,6 +25,9 @@ export class SidebarComponent {
     this._tableRowData = data;
     this.isOpen = !!data;
   }
+  @Input() type = signal<TableType>(TableType.PURCHASES);
+
+  TableType = TableType;
 
   get tableRowData(): TableData | null {
     return this._tableRowData;

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TableData } from '../../interfaces/table-data.interface';
 import { CommonModule } from '@angular/common';
+import { TableType } from '../../interfaces/table-type.enum';
 @Component({
   selector: 'app-table',
   imports: [CommonModule],
@@ -10,10 +11,19 @@ import { CommonModule } from '@angular/common';
 export class TableComponent {
   @Input() title: string = '';
   @Input() data: TableData[] = [];
-  @Output() onRowClicked = new EventEmitter<TableData>();
+  @Input() type: TableType = TableType.SALES;
+  @Output() onRowClicked = new EventEmitter<{
+    data: TableData;
+    type: TableType;
+  }>();
 
-  openRowDetails(data: TableData) {
-    this.onRowClicked.emit(data);
+  TableType = TableType;
+
+  openRowDetails(data: TableData, type: TableType) {
+    this.onRowClicked.emit({
+      data,
+      type,
+    });
   }
 
   formatDate(ts: number | string): string {

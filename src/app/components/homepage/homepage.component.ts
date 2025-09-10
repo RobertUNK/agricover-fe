@@ -4,6 +4,7 @@ import { TableComponent } from '../table/table.component';
 import { HeaderComponent } from '../header/header.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { DataService } from '../../services/data.service';
+import { TableType } from '../../interfaces/table-type.enum';
 
 @Component({
   selector: 'app-homepage',
@@ -14,9 +15,10 @@ import { DataService } from '../../services/data.service';
 })
 export class HomepageComponent implements OnInit {
   private dataService = inject(DataService);
-
+  TableType = TableType;
   salesData = signal<TableData[]>([]);
   purchasesData = signal<TableData[]>([]);
+  type = signal<TableType>(TableType.PURCHASES);
 
   salesTitle = 'Vânzări';
   purchasesTitle = 'Achiziții';
@@ -25,7 +27,7 @@ export class HomepageComponent implements OnInit {
   currentSortKey: keyof TableData = 'totalBlockage';
   currentSortDirection: 'asc' | 'desc' = 'desc';
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.dataService.pollOrders().subscribe(({ sales, purchases }) => {
@@ -34,8 +36,9 @@ export class HomepageComponent implements OnInit {
     });
   }
 
-  onTableRowClicked(data: TableData) {
-    this.selectedTableRow = data;
+  onTableRowClicked(event: { data: TableData; type: TableType }) {
+    this.selectedTableRow = event.data;
+    this.type.set(event.type);
   }
 
   onCloseSidebar(_: boolean) {

@@ -5,13 +5,15 @@
     </div>
     <div class="sidebar-content__header">
       <div class="left-side">
-        <div class="title">Comandă Livrare</div>
+        <div class="title">{{ type() === TableType.SALES ? "Comandă Livrare" : "Comanda Achizitie" }}</div>
         <div class="client">{{ tableRowData?.client }}</div>
         <div class="order-number">{{ tableRowData?.orderNumber }}</div>
       </div>
       <div class="right-side">
         <div class="card">
-          <div class="card__label">Agent</div>
+          <div class="card__label">
+            {{ type() === TableType.SALES ? "Agent" : "Creat de" }}
+          </div>
           <div class="card__value">{{ tableRowData?.agent }}</div>
         </div>
         <div class="card">
@@ -22,9 +24,12 @@
           <div class="card__label">Motiv</div>
           <div class="card__value">{{ tableRowData?.reason }}</div>
         </div>
-        <div class="card" [ngClass]="{
+        <div
+          class="card"
+          [ngClass]="{
             red: formatDuration(tableRowData?.totalBlockage) !== '-'
-          }">
+          }"
+        >
           <div class="card__label">Durată blocare</div>
           <div class="card__value">
             {{ formatDuration(tableRowData?.totalBlockage) }}
@@ -35,7 +40,7 @@
           <div class="card__value">{{ formatDate(tableRowData?.data) }}</div>
         </div>
         <div class="card">
-          <div class="card__label">Zonă</div>
+          <div class="card__label">{{ type() === TableType.SALES ? "Zonă" : "Divizia" }}</div>
           <div class="card__value">{{ tableRowData?.zone }}</div>
         </div>
         <div class="card">
@@ -58,7 +63,7 @@
             <div class="column">Cantitate</div>
             <div class="column">U.M.</div>
             <div class="column">Unitate logistică</div>
-            <div class="column">Stoc</div>
+            <div class="column">{{ type() === TableType.SALES ? "Stoc" : "Cantitate nereceptionata" }}</div>
           </div>
         </div>
       </div>

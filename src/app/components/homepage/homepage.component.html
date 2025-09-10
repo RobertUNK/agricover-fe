@@ -5,17 +5,20 @@
     <app-table
       [title]="salesTitle"
       [data]="salesData()"
+      [type]="TableType.SALES"
       (onRowClicked)="onTableRowClicked($event)"
     ></app-table>
     <div class="title">Achiziții</div>
     <app-table
       [title]="purchasesTitle"
       [data]="purchasesData()"
+      [type]="TableType.PURCHASES"
       (onRowClicked)="onTableRowClicked($event)"
     ></app-table>
   </div>
   <app-sidebar
     [tableRowData]="selectedTableRow"
+    [type]="type"
     (onCloseSidebar)="onCloseSidebar($event)"
   ></app-sidebar>
 </div>
