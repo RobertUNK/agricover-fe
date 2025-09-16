@@ -32,6 +32,12 @@ export class SidebarComponent {
   get tableRowData(): TableData | null {
     return this._tableRowData;
   }
+  get sortedOrderDetails() {
+    if (!this._tableRowData?.orderDetails) return [];
+    return [...this._tableRowData.orderDetails].sort(
+      (a, b) => Number(a.positionNumber) - Number(b.positionNumber)
+    );
+  }
 
   @HostBinding('class.open') isOpen = false;
 
