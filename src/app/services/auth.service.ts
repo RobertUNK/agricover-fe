@@ -7,8 +7,8 @@ import { environment } from '../../environments/environment';
 export class AuthService {
   private readonly TOKEN_KEY = 'token';
 
-  private readonly username = 'testuser';
-  private readonly password = 'SOz-^!C;pg8Uc?sWI~D^leC62`Ck+iS£';
+  private readonly USERNAME = environment.username;
+  private readonly PASSWORD = environment.password;
   private readonly LOGIN_URL = `${environment.domainUrl}/login`;
 
   constructor(private http: HttpClient) {}
@@ -31,8 +31,8 @@ export class AuthService {
     try {
       const response: any = await firstValueFrom(
         this.http.post(this.LOGIN_URL, {
-          username: this.username,
-          password: this.password,
+          username: this.USERNAME,
+          password: this.PASSWORD,
         })
       );
       this.saveToken(response.token);

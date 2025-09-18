@@ -50,7 +50,7 @@ export interface Achizitie {
   timestamp2: number;
   pozitii: PozitieAchizitie[];
   ernam: string;
-  spart_vtext: string;
+  spartVtext: string;
   autlf: string;
 }
 
@@ -62,4 +62,5 @@ export interface PozitieAchizitie {
   bprme: string;
   werks: string;
   bprme_rec: number;
+  mengeRec: number;
 }

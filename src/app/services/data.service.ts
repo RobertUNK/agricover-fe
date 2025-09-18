@@ -93,7 +93,7 @@ export class DataService {
       responsive: v.responsabil,
       lockDuration: v.timestamp2,
       partialDelivery: v.autlf,
-      totalBlockage: v.timestamp2,
+      totalBlockage: v.timestamp1,
       orderDetails: (v.pozitii ?? []).map((p: PozitieVanzare) => ({
         positionNumber: p.posnr,
         materialCode: p.matnr,
@@ -110,13 +110,13 @@ export class DataService {
       client: a.name1,
       agent: a.ernam,
       data: a.timestamp1,
-      zone: a.spart_vtext,
+      zone: a.spartVtext,
       status: a.status,
       reason: a.motivblocaj,
       responsive: a.responsabil,
       lockDuration: a.timestamp2,
       partialDelivery: a.autlf,
-      totalBlockage: a.timestamp2,
+      totalBlockage: a.timestamp1,
       orderDetails: (a.pozitii ?? []).map((p: PozitieAchizitie) => ({
         positionNumber: +p.ebelp,
         materialCode: p.matnr,
@@ -124,7 +124,7 @@ export class DataService {
         quantity: p.menge,
         um: p.bprme,
         logisticUnity: p.werks,
-        stock: p.bprme_rec,
+        stock: p.mengeRec,
       })),
     }));
 
